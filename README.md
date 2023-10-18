@@ -18,3 +18,6 @@ To work with LaTeX documents in this repository, you'll need:
 ### 3. LaTeX Extension for VS Code:
 
 - Install the "LaTeX Workshop" extension in VS Code.
+
+## Documentation
+[Latex documentation](https://www.latex-project.org/help/documentation/clsguide.pdf)
