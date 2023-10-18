@@ -1,5 +1,3 @@
-# Repository README
-
 ## Prerequisites
 
 To work with LaTeX documents in this repository, you'll need:
