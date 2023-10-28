@@ -38,3 +38,5 @@ To work with LaTeX documents in this repository, you'll need:
 
 ## Documentation
 [Latex documentation](https://www.latex-project.org/help/documentation/clsguide.pdf)
+[MiroBoard](https://miro.com/app/board/uXjVNYsrpeE=/)
+[MNIST](https://www.tensorflow.org/datasets/catalog/mnist?hl=pl)
