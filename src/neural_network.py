@@ -3,51 +3,98 @@ Module description: Briefly explain the purpose and contents of the module.
 """
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 class NeuralNetwork:
     """
-    Description of YourClass.
+    Description of NeuralNetwork.
 
     Attributes:
-    attr1 (type): Description of attribute 1.
-    attr2 (type): Description of attribute 2.
+    layers (Layer[]): Array of type Layer.
 
     Methods:
     method1(self, arg1, arg2) -> return_type: Description of method 1.
-    method2(self, arg1, arg2) -> return_type: Description of method 2.
 
-    Functions:
-    function(arg1, arg2)
     """
 
-    INPUT_SIZE = 784
-    OUTPUT_SIZE = 10
+    def __init__(self, *layer_sizes):
+        self.layers = [] #Layer[len(layer_sizes) - 1]
+        for i in range(len(layer_sizes) - 1):
+            self.layers.append(Layer(layer_sizes[i], layer_sizes[i+1]))
 
-    def __init__(self, hidden_layer_size):
-        self.weights_input_hidden = np.random.rand(input_size, hidden_layer_size)
-
-    def your_function(arg1, arg2):
+    def calculate_outputs(self, inputs):
         """
-        Description of your function goes here.
+        Calculates the outputs of the neural network based on the given inputs.
 
         Args:
-        arg1 (type): Description of arg1.
-        arg2 (type): Description of arg2.
+        inputs: Array containing input values.
 
         Returns:
-        type: Description of the return value.
+        float: Array containing calculated outputs.
         """
-        return arg1 + arg2
+        for layer in self.layers:
+            inputs = layer.calculate_outputs(inputs)
+        return inputs
     
-    def your_method(self, arg1, arg2):
+    def classify(self, inputs):
         """
-        Description of your_method.
+        Run the inputs throught the network and 
+        calculate which output node has the highest value
 
         Args:
-        arg1 (type): Description of arg1.
-        arg2 (type): Description of arg2.
+        inputs: Array containing input values.
 
         Returns:
-        type: Description of the return value.
+        float: Max value of calculated outputs
         """
-        return arg1 - arg2
+        outputs = self.calculate_outputs(inputs)
+        return outputs.argmax()
+
+    def visualize(self, graph_x, graph_y):
+        predicted_class = self.classify([graph_x, graph_y])
+
+        if predicted_class == 0:
+            plt.scatter(graph_x, graph_y, color='blue', label='Safe')
+        elif predicted_class == 1:
+            plt.scatter(graph_x, graph_y, color='red', label='Poisonous')
+        plt.xlabel('X-axis')
+        plt.ylabel('Y-axis')
+        plt.legend()
+        plt.show()
+
+class Layer:
+    """
+    Represents a single layer in neural network.
+
+    Attributes:
+    numNodesIn : Number of nodes that comes in.
+    numNodesOut: Number of nodes that comes out.
+
+    Methods:
+    calculate_outputs(self, inputs) -> returns weighted inputs
+    """
+    def __init__(self, numNodesIn, numNodesOut):
+        self.numNodesIn = numNodesIn
+        self.numNodesOut = numNodesOut
+        self.weights = np.zeros((self.numNodesIn, self.numNodesOut))
+        self.biases = np.zeros(self.numNodesOut)
+
+    def calculate_outputs(self, inputs):
+        """
+        Calculates the output of a layer based on the inputs, weights, and biases.
+
+        Args:
+        inputs: Array containing input values. In our scenario these are just each pixel.
+
+        Returns:
+        float: Array of floats containing calculated outputs of an layer.
+        """
+        weighted_inputs = np.zeros(self.numNodesOut)
+
+        for nodeOut in range(self.numNodesOut):
+            weighted_input = self.biases[nodeOut]
+            for nodeIn in range(self.numNodesIn):
+                weighted_input += inputs[nodeIn] * self.weights[nodeIn, nodeOut]
+            weighted_inputs[nodeOut] = weighted_input
+        
+        return weighted_inputs
