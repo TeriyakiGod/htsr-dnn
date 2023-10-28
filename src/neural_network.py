@@ -19,7 +19,11 @@ class NeuralNetwork:
     Functions:
     function(arg1, arg2)
     """
-    def __init__(self, input_size, hidden_layer_size, output_size):
+
+    INPUT_SIZE = 784
+    OUTPUT_SIZE = 10
+
+    def __init__(self, hidden_layer_size):
         self.weights_input_hidden = np.random.rand(input_size, hidden_layer_size)
 
     def your_function(arg1, arg2):
