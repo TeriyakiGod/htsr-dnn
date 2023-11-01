@@ -1,94 +1,71 @@
-"""
-Module description: Briefly explain the purpose and contents of the module.
-"""
+##@package neural_network
+# Neural network implementation.
 
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 class NeuralNetwork:
-    """
-    Description of NeuralNetwork.
-
-    Attributes:
-    layers (Layer[]): Array of type Layer.
-
-    Methods:
-    method1(self, arg1, arg2) -> return_type: Description of method 1.
-
-    """
+    ##Neural network class.
 
     def __init__(self, *layer_sizes):
-        self.layers = [] #Layer[len(layer_sizes) - 1]
+        ##Neural network constructor.
+        # @param layer_sizes (int[]): Number of nodes in each layer.
+
+        self.layers = []  # Layer[len(layer_sizes) - 1]
         for i in range(len(layer_sizes) - 1):
-            self.layers.append(Layer(layer_sizes[i], layer_sizes[i+1]))
+            self.layers.append(Layer(layer_sizes[i], layer_sizes[i + 1]))
 
     def calculate_outputs(self, inputs):
-        """
-        Calculates the outputs of the neural network based on the given inputs.
+        ##Calculate outputs of neural network.
+        # @param inputs (float[]): Inputs to neural network.
+        # @return float[]: Outputs of neural network.
 
-        Args:
-        inputs: Array containing input values.
-
-        Returns:
-        float: Array containing calculated outputs.
-        """
         for layer in self.layers:
             inputs = layer.calculate_outputs(inputs)
         return inputs
-    
+
     def classify(self, inputs):
-        """
-        Run the inputs throught the network and 
-        calculate which output node has the highest value
+        ##Classify inputs.
+        # @param inputs (float[]): Inputs to classify.
+        # @return int: Class of inputs.
 
-        Args:
-        inputs: Array containing input values.
-
-        Returns:
-        float: Max value of calculated outputs
-        """
         outputs = self.calculate_outputs(inputs)
         return outputs.argmax()
 
     def visualize(self, graph_x, graph_y):
+        ##Visualize neural network.
+        # @param graph_x (float): X-axis value to graph.
+        # @param graph_y (float): Y-axis value to graph.
+
         predicted_class = self.classify([graph_x, graph_y])
 
         if predicted_class == 0:
-            plt.scatter(graph_x, graph_y, color='blue', label='Safe')
+            plt.scatter(graph_x, graph_y, color="blue", label="Safe")
         elif predicted_class == 1:
-            plt.scatter(graph_x, graph_y, color='red', label='Poisonous')
-        plt.xlabel('X-axis')
-        plt.ylabel('Y-axis')
+            plt.scatter(graph_x, graph_y, color="red", label="Poisonous")
+        plt.xlabel("X-axis")
+        plt.ylabel("Y-axis")
         plt.legend()
         plt.show()
 
+
 class Layer:
-    """
-    Represents a single layer in neural network.
+    ##Layer class.
 
-    Attributes:
-    numNodesIn : Number of nodes that comes in.
-    numNodesOut: Number of nodes that comes out.
-
-    Methods:
-    calculate_outputs(self, inputs) -> returns weighted inputs
-    """
     def __init__(self, numNodesIn, numNodesOut):
+        ##Layer constructor.
+
         self.numNodesIn = numNodesIn
         self.numNodesOut = numNodesOut
         self.weights = np.zeros((self.numNodesIn, self.numNodesOut))
         self.biases = np.zeros(self.numNodesOut)
 
     def calculate_outputs(self, inputs):
-        """
-        Calculates the output of a layer based on the inputs, weights, and biases.
+        ##Calculate outputs of layer.
+        # @param inputs (float[]): Inputs to layer.
+        # @return float[]: Outputs of layer.
 
-        Args:
-        inputs: Array containing input values. In our scenario these are just each pixel.
-
-        Returns:
-        float: Array of floats containing calculated outputs of an layer.
-        """
         weighted_inputs = np.zeros(self.numNodesOut)
 
         for nodeOut in range(self.numNodesOut):
@@ -96,5 +73,5 @@ class Layer:
             for nodeIn in range(self.numNodesIn):
                 weighted_input += inputs[nodeIn] * self.weights[nodeIn, nodeOut]
             weighted_inputs[nodeOut] = weighted_input
-        
+
         return weighted_inputs
