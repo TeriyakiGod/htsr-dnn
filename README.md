@@ -44,5 +44,3 @@ Here are some helpful links for reference:
 
 - [MNIST Dataset](https://www.tensorflow.org/datasets/catalog/mnist?hl=pl)
    - Information about the MNIST dataset, commonly used in machine learning and computer vision tasks.
-
-This format provides a clear and organized structure for the information you wanted to convey.
