@@ -1,25 +1,48 @@
+# Handwritten text symbol recognition deep neural network
+
 ## Prerequisites
 
-To work with LaTeX documents in this repository, you'll need:
+To work with the content in this repository, you'll need the following software and packages:
 
-- **Visual Studio Code (VS Code)**
-- **Linux/Docker**
+1. **Python**
+   - Required for running Python scripts and code.
+   
+2. **NumPy**
+   - A fundamental package for scientific computing with Python.
 
-## First option of Installation [Linux]
+3. **Matplotlib**
+   - A data visualization library for creating static, animated, and interactive visualizations in Python.
 
-### 1. LaTeX (TeX Live):
+4. **Visual Studio Code (VS Code)**
+   - A popular code editor for various programming languages.
 
-- Install TeX Live: `sudo apt install texlive`
+5. **"LaTeX Workshop" Extension for VS Code**
+   - An extension that allows you to work with LaTeX documents within Visual Studio Code.
 
-### 2. LaTeXmk (Optional, but recommended):
+## Packages
 
-- Install LaTeXmk: `sudo apt install latexmk`
+Ensure you have the following packages installed:
 
-### 3. LaTeX Extension for VS Code:
+1. **TeX Live (texlive)**
+   - A comprehensive distribution of TeX and related programs for typesetting documents.
 
-- Install the "LaTeX Workshop" extension in VS Code.
+2. **LaTeXmk (latexmk)**
+   - A tool for automating the process of generating LaTeX documents.
 
-## Documentation
-[Latex documentation](https://www.latex-project.org/help/documentation/clsguide.pdf)
-[MiroBoard](https://miro.com/app/board/uXjVNYsrpeE=/)
-[MNIST](https://www.tensorflow.org/datasets/catalog/mnist?hl=pl)
+3. **Doxygen**
+   - A documentation generator for various programming languages.
+
+## Links
+
+Here are some helpful links for reference:
+
+- [LaTeX Documentation](https://www.latex-project.org/help/documentation/clsguide.pdf)
+   - Official LaTeX documentation, a valuable resource for learning and using LaTeX.
+
+- [MiroBoard](https://miro.com/app/board/uXjVNYsrpeE=/)
+   - Link to a Miro board, presumably for collaborative work or brainstorming.
+
+- [MNIST Dataset](https://www.tensorflow.org/datasets/catalog/mnist?hl=pl)
+   - Information about the MNIST dataset, commonly used in machine learning and computer vision tasks.
+
+This format provides a clear and organized structure for the information you wanted to convey.
