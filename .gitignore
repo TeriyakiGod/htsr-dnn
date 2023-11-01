@@ -1,3 +1,4 @@
 .vscode/
 doc/html/
 doc/latex/
+src/__pycache__
