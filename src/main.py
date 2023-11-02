@@ -3,10 +3,15 @@ from neural_network import Layer, NeuralNetwork
 
 
 def main():
-    neural_network = NeuralNetwork(784, 2, 10)
+    numberOfInputs = 784
+    numberOfHiddenLayers = 2
+    numberOfOutputs = 10
+    neural_network = NeuralNetwork(numberOfInputs, numberOfHiddenLayers, numberOfOutputs)
 
-    layer = Layer(6, 3)
-    sample_inputs = np.random.rand(6)
+    numberNodesIn = 6
+    numberNodesOut = 3
+    layer = Layer(numberNodesIn, numberNodesOut)
+    sample_inputs = np.random.rand(numberNodesIn)
     layer.print_outputs(sample_inputs) 
 
 if __name__ == "__main__":
