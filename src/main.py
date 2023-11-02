@@ -8,8 +8,9 @@ def main():
     numberOfOutputs = 10
     neural_network = NeuralNetwork(numberOfInputs, numberOfHiddenLayers, numberOfOutputs)
 
-    numberNodesIn = 6
-    numberNodesOut = 3
+    print("layer test:")
+    numberNodesIn = 3
+    numberNodesOut = 2
     layer = Layer(numberNodesIn, numberNodesOut)
     sample_inputs = np.random.rand(numberNodesIn)
     layer.print_outputs(sample_inputs) 

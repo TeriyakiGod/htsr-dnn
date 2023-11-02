@@ -7,6 +7,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+import activation_functions as af
 
 class NeuralNetwork:
     ##Neural Network.
@@ -70,7 +71,8 @@ class Layer:
         # @return float[]: Outputs of the layer.
 
         weighted_inputs = np.dot(inputs, self.weights) + self.biases # Iloczyn skalarny
-
+        
+        #return af.relu(weighted_inputs)
         return weighted_inputs
     
     def print_outputs(self, inputs):
