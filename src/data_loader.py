@@ -126,3 +126,4 @@ for i in range(0, 5):
     titles_2_show.append("test image [" + str(r) + "] = " + str(y_test[r]))
 
 show_images(images_2_show, titles_2_show)
+plt.show()
