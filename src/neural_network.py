@@ -1,77 +1,87 @@
 ##@package neural_network
 # Neural network implementation.
 
+# Take all values from connected neurons multiplied by their respective weight, 
+# add them, and apply an activation function. 
+# Then, the neuron is ready to send its new value to other neurons.
+
 import numpy as np
 import matplotlib.pyplot as plt
-
+import activation_functions as af
 
 class NeuralNetwork:
-    ##Neural network class.
+    ##Neural Network.
 
-    def __init__(self, *layer_sizes):
+    def __init__(self, numOfInputs, numOfHiddenLayers, numOfOutputs):
         ##Neural network constructor.
-        # @param layer_sizes (int[]): Number of nodes in each layer.
+        # @param numOfInputs (int): Number of input nodes.
+        # @param numOfHiddenLayers (int): Number of hidden layers.
+        # @param numOfOutputs (int): Number of output nodes.
+        self.numOfInputs = numOfInputs
+        self.numOfHiddenLayers = numOfHiddenLayers
+        self.numOfOutputs = numOfOutputs
+        self.layers = []
+        self.create_layers(numOfInputs, numOfHiddenLayers, numOfOutputs)
+        self.print_info_about_architecture()
 
-        self.layers = []  # Layer[len(layer_sizes) - 1]
-        for i in range(len(layer_sizes) - 1):
-            self.layers.append(Layer(layer_sizes[i], layer_sizes[i + 1]))
+    def create_layers(self, numOfInputs, numOfHiddenLayers, numOfOutputs):
+        ##Creates layers for the neural network.
+        # @param numOfInputs (int): Number of input nodes.
+        # @param numOfHiddenLayers (int): Number of hidden layers.
+        # @param numOfOutputs (int): Number of output nodes.
+        inputLayer = Layer(numOfInputs, np.random.randint(5, 15))
+        self.layers.append(inputLayer)
 
-    def calculate_outputs(self, inputs):
-        ##Calculate outputs of neural network.
-        # @param inputs (float[]): Inputs to neural network.
-        # @return float[]: Outputs of neural network.
+        for i in range(numOfHiddenLayers):
+            if i == 0:
+                hiddenLayer = Layer(numOfInputs, np.random.randint(5, 15))
+                self.layers.append(hiddenLayer)
+            else:
+                hiddenLayer = Layer(self.layers[-1].numNodesOut, np.random.randint(5, 15))
+                self.layers.append(hiddenLayer)
 
-        for layer in self.layers:
-            inputs = layer.calculate_outputs(inputs)
-        return inputs
+        outputLayer = Layer(self.layers[-1].numNodesOut, numOfOutputs)
+        self.layers.append(outputLayer)
 
-    def classify(self, inputs):
-        ##Classify inputs.
-        # @param inputs (float[]): Inputs to classify.
-        # @return int: Class of inputs.
-
-        outputs = self.calculate_outputs(inputs)
-        return outputs.argmax()
-
-    def visualize(self, graph_x, graph_y):
-        ##Visualize neural network.
-        # @param graph_x (float): X-axis value to graph.
-        # @param graph_y (float): Y-axis value to graph.
-
-        predicted_class = self.classify([graph_x, graph_y])
-
-        if predicted_class == 0:
-            plt.scatter(graph_x, graph_y, color="blue", label="Safe")
-        elif predicted_class == 1:
-            plt.scatter(graph_x, graph_y, color="red", label="Poisonous")
-        plt.xlabel("X-axis")
-        plt.ylabel("Y-axis")
-        plt.legend()
-        plt.show()
-
+    def print_info_about_architecture(self):
+        ##Prints information about the neural network's architecture.
+        print("Initializing Neural Network with:")
+        for i, layer in enumerate(self.layers):
+            if i == 0:
+                print(f"Input Layer: {layer.numNodesIn} nodes")
+            elif i == len(self.layers) - 1:
+                print(f"Output Layer: {layer.numNodesOut} nodes and {layer.numNodesIn} inputs")
+            else:
+                print(f"Hidden Layer {i}: {layer.numNodesOut} nodes and {layer.numNodesIn} inputs")
 
 class Layer:
-    ##Layer class.
+    ##Layer within a Neural Network.
 
     def __init__(self, numNodesIn, numNodesOut):
         ##Layer constructor.
 
         self.numNodesIn = numNodesIn
         self.numNodesOut = numNodesOut
-        self.weights = np.zeros((self.numNodesIn, self.numNodesOut))
-        self.biases = np.zeros(self.numNodesOut)
+        self.weights = np.random.rand(self.numNodesIn, self.numNodesOut)
+        self.biases = np.random.randn(self.numNodesOut)
 
     def calculate_outputs(self, inputs):
-        ##Calculate outputs of layer.
-        # @param inputs (float[]): Inputs to layer.
-        # @return float[]: Outputs of layer.
+        ##Calculates outputs of the layer based on the given inputs.
+        # @param inputs (float[]): Inputs to the layer.
+        # @return float[]: Outputs of the layer.
 
-        weighted_inputs = np.zeros(self.numNodesOut)
-
-        for nodeOut in range(self.numNodesOut):
-            weighted_input = self.biases[nodeOut]
-            for nodeIn in range(self.numNodesIn):
-                weighted_input += inputs[nodeIn] * self.weights[nodeIn, nodeOut]
-            weighted_inputs[nodeOut] = weighted_input
-
+        weighted_inputs = np.dot(inputs, self.weights) + self.biases # Iloczyn skalarny
+        
+        #return af.relu(weighted_inputs)
         return weighted_inputs
+    
+    def print_outputs(self, inputs):
+        ##Prints generated weights, biases and calculated outputs of a Layer.
+        np.set_printoptions(precision=2)
+        print("Weights:")
+        print(self.weights)
+        print("Biases:")
+        print(self.biases)
+        outputs = self.calculate_outputs(inputs)
+        print("Outputs:")
+        print(outputs)
