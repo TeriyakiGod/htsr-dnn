@@ -1,40 +1,32 @@
-import numpy as np
-from data_loader import MnistDataloader
-from neural_network import Layer, NeuralNetwork
+from data import DataPoint
+from neural_network import NeuralNetwork
 
+# Create a simple training dataset
+# XOR function: y = x1 XOR x2
+training_data = [
+    DataPoint([0, 0], 0, 2),
+    DataPoint([0, 1], 1, 2),
+    DataPoint([1, 0], 1, 2),
+    DataPoint([1, 1], 0, 2),
+]
 
-import random
-import matplotlib.pyplot as plt
-import numpy as np  # linear algebra
-import struct
-from array import array
-from os.path import join
+# Create a neural network with 2 hidden nodes, and 1 output
+nn = NeuralNetwork(2, 2)
 
-def main():
-    ## Create neural network:
+# Train the neural network
+for _ in range(2):
+    nn.learn(training_data, 0.1)
 
-    numberOfInputs = 784
-    numberOfHiddenLayers = 2
-    numberOfOutputs = 10
-    neural_network = NeuralNetwork(numberOfInputs, numberOfHiddenLayers, numberOfOutputs)
-
-    ## Create layer for testing:
-
-    print("layer test:")
-    numberNodesIn = 3
-    numberNodesOut = 2
-    layer = Layer(numberNodesIn, numberNodesOut)
-    sample_inputs = np.random.rand(numberNodesIn)
-    layer.print_outputs(sample_inputs) 
-
-    ## Data load:
-
-    images_filepath = "input/train-images-idx3-ubyte/train-images-idx3-ubyte"
-    labels_filepath = "input/train-labels-idx1-ubyte/train-labels-idx1-ubyte"
-    test_images_filepath = "input/t10k-images-idx3-ubyte/t10k-images-idx3-ubyte"
-    test_labels_filepath = "input/t10k-labels-idx1-ubyte/t10k-labels-idx1-ubyte"
-
-    mnistLoader = MnistDataloader(images_filepath, labels_filepath, test_images_filepath, test_labels_filepath)
-
-if __name__ == "__main__":
-    main()
+# Test the neural network
+print("XOR Test")
+print(
+    "Inputs [true, false]\t\tExpected Output [true, false]\t\tActual Output [true, false]"
+)
+print(
+    "---------------------------------------------------------------------------------------------------------"
+)
+for data_point in training_data:
+    inputs = data_point.inputs
+    expected_output = data_point.expected_outputs
+    actual_output = nn.calculate_outputs(inputs)
+    print(f"\t{inputs}\t\t\t\t{expected_output}\t\t\t{actual_output}")
