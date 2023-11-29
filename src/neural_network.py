@@ -79,7 +79,7 @@ class Layer:
         self.cost_gradient_w = np.zeros((self.num_nodes_in, self.num_nodes_out))
         self.cost_gradient_b = np.zeros(self.num_nodes_out)
 
-    def node_cost(self, output_activation, expected_output):
+    def back_propagation(self, output_activation, expected_output):
         error = expected_output - output_activation
         return error * error
 

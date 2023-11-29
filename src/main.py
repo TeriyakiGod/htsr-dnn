@@ -2,31 +2,44 @@ from data import DataPoint
 from neural_network import NeuralNetwork
 
 # Create a simple training dataset
-# XOR function: y = x1 XOR x2
 training_data = [
-    DataPoint([0, 0], 0, 2),
-    DataPoint([0, 1], 1, 2),
-    DataPoint([1, 0], 1, 2),
-    DataPoint([1, 1], 0, 2),
+    # AND function: y = x1 AND x2
+    [
+        DataPoint([0, 0], 0, 2),
+        DataPoint([0, 1], 0, 2),
+        DataPoint([1, 0], 0, 2),
+        DataPoint([1, 1], 1, 2),
+    ],
+    # OR function: y = x1 OR x2
+    [
+        DataPoint([0, 0], 0, 2),
+        DataPoint([0, 1], 1, 2),
+        DataPoint([1, 0], 1, 2),
+        DataPoint([1, 1], 1, 2),
+    ],
+    # XOR function: y = x1 XOR x2
+    [
+        DataPoint([0, 0], 0, 2),
+        DataPoint([0, 1], 1, 2),
+        DataPoint([1, 0], 1, 2),
+        DataPoint([1, 1], 0, 2),
+    ],
 ]
 
-# Create a neural network with 2 hidden nodes, and 1 output
-nn = NeuralNetwork(2, 2)
-
-# Train the neural network
-for _ in range(2):
-    nn.learn(training_data, 0.1)
-
 # Test the neural network
-print("XOR Test")
-print(
-    "Inputs [true, false]\t\tExpected Output [true, false]\t\tActual Output [true, false]"
-)
-print(
-    "---------------------------------------------------------------------------------------------------------"
-)
-for data_point in training_data:
-    inputs = data_point.inputs
-    expected_output = data_point.expected_outputs
-    actual_output = nn.calculate_outputs(inputs)
-    print(f"\t{inputs}\t\t\t\t{expected_output}\t\t\t{actual_output}")
+for test in training_data:
+    nn = NeuralNetwork(2, 10, 2)
+    learning_rate = 0.2
+
+    # Train the neural network
+    for _ in range(2000):
+        nn.learn(test, learning_rate)
+    print("Input | Expected Output | Actual Output")
+    print("------|-----------------|--------------")
+    for data_point in test:
+        inputs = data_point.inputs
+        expected_output = data_point.expected_outputs
+        actual_output = nn.calculate_outputs(inputs)
+        actual_output[0] = 1 if actual_output[0] > 0.5 else 0
+        actual_output[1] = 1 if actual_output[1] > 0.5 else 0
+        print(f"{inputs}      {expected_output}            {actual_output}")
