@@ -1,5 +1,7 @@
 from data import DataPoint
 from neural_network import NeuralNetwork
+import matplotlib.pyplot as plt
+
 
 # Create a simple training dataset
 training_data = [
@@ -27,19 +29,33 @@ training_data = [
 ]
 
 # Test the neural network
-for test in training_data:
+fig, axs = plt.subplots(len(training_data), 1, figsize=(5, 15))  # Create subplots for each test
+
+for i, test in enumerate(training_data):
     nn = NeuralNetwork(2, 10, 2)
-    learning_rate = 0.2
+    learning_rate = 0.3
+    numberOfSteps = 1000
+    accuracies = []  # List to store accuracies
 
     # Train the neural network
-    for _ in range(2000):
+    for _ in range(numberOfSteps):
         nn.learn(test, learning_rate)
-    print("Input | Expected Output | Actual Output")
-    print("------|-----------------|--------------")
-    for data_point in test:
-        inputs = data_point.inputs
-        expected_output = data_point.expected_outputs
-        actual_output = nn.calculate_outputs(inputs)
-        actual_output[0] = 1 if actual_output[0] > 0.5 else 0
-        actual_output[1] = 1 if actual_output[1] > 0.5 else 0
-        print(f"{inputs}      {expected_output}            {actual_output}")
+        
+        # Calculate accuracy
+        correct_predictions = 0
+        for data_point in test:
+            inputs = data_point.inputs
+            expected_output = data_point.expected_outputs
+            actual_output = nn.calculate_outputs(inputs)
+            if (actual_output[0] > 0.5) == expected_output[0] and (actual_output[1] > 0.5) == expected_output[1]:
+                correct_predictions += 1
+        accuracy = correct_predictions / len(test)
+        accuracies.append(accuracy)
+
+    # Plot accuracy over iterations
+    axs[i].plot(accuracies)
+    axs[i].set_xlabel('Iteration')
+    axs[i].set_ylabel('Accuracy')
+
+plt.tight_layout()
+plt.show()
