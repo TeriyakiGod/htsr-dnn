@@ -19,9 +19,13 @@ for i in range(len(images)):
     training_data.append(DataPoint(flattened_image, labels[i], 10))
 
 nn = NeuralNetwork(784, 89, 10)
-learning_rate = 1
+learning_rate = 0.7
 numberOfSteps = 1000
+batch_size = 32  # Adjust the batch size as needed
+
+
 print("Start")
 for i in range(numberOfSteps):
-    nn.learn(training_data, learning_rate)
+    nn.learn(training_data, learning_rate, batch_size)
     print("Step: ", i, " Cost: ", nn.total_cost(training_data))
+    
