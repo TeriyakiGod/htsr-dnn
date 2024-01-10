@@ -37,31 +37,54 @@ class NeuralNetwork:
         return cost
 
     def total_cost(self, data):
-        total_cost = 0
-        for data_point in data:
-            total_cost += self.cost(data_point)
-        return total_cost / len(data)
+        outputs = np.array([self.calculate_outputs(dp.inputs) for dp in data])
+        expected_outputs = np.array([dp.expected_outputs for dp in data])
+        return np.mean(np.sum((outputs - expected_outputs) ** 2, axis=-1))
 
-    def learn(self, training_data, learning_rate):
+
+    def learn(self, training_data, learning_rate, batch_size):
         h = 0.0001
         original_cost = self.total_cost(training_data)
-        for layer in self.layers:
-            for node_in in range(layer.num_nodes_in):
-                for node_out in range(layer.num_nodes_out):
-                    layer.weights[node_in, node_out] += h
-                    delta_cost = self.total_cost(training_data) - original_cost
-                    layer.weights[node_in, node_out] -= h
-                    layer.cost_gradient_w[node_in, node_out] = delta_cost / h
-            for bias_index in range(len(layer.biases)):
-                layer.biases[bias_index] += h
-                delta_cost = self.total_cost(training_data) - original_cost
-                layer.biases[bias_index] -= h
-                layer.cost_gradient_b[bias_index] = delta_cost / h
+
+        # Shuffle the training data to introduce randomness
+        np.random.shuffle(training_data)
+
+        for start in range(0, len(training_data), batch_size):
+            end = start + batch_size
+            batch = training_data[start:end]
+
+            # Accumulate gradient updates over the batch
+            for layer in self.layers:
+                layer_gradient_w = np.zeros_like(layer.weights)
+                layer_gradient_b = np.zeros_like(layer.biases)
+
+                for data_point in batch:
+                    # Calculate gradients for weights using vectorized operations
+                    delta_cost_w = np.zeros_like(layer.weights)
+                    for node_in in range(layer.num_nodes_in):
+                        for node_out in range(layer.num_nodes_out):
+                            layer.weights[node_in, node_out] += h
+                            delta_cost_w[node_in, node_out] = self.total_cost(batch) - original_cost
+                            layer.weights[node_in, node_out] -= h
+
+                    # Calculate gradients for biases using vectorized operations
+                    delta_cost_b = np.zeros_like(layer.biases)
+                    for bias_index in range(len(layer.biases)):
+                        layer.biases[bias_index] += h
+                        delta_cost_b[bias_index] = self.total_cost(batch) - original_cost
+                        layer.biases[bias_index] -= h
+
+                    # Accumulate gradients over the batch
+                    layer_gradient_w += delta_cost_w / h
+                    layer_gradient_b += delta_cost_b / h
+
+                # Update weights and biases using accumulated gradients
+                layer.weights -= learning_rate * (layer_gradient_w / len(batch))
+                layer.biases -= learning_rate * (layer_gradient_b / len(batch))
+
         self.apply_gradients(learning_rate)
 
-    def apply_gradients(self, learning_rate):
-        for layer in self.layers:
-            layer.apply_gradients(learning_rate)
+
 
 
 class Layer:
