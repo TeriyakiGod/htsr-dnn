@@ -2,7 +2,6 @@ from data import DataPoint, MnistDataloader
 from neural_network import NeuralNetwork
 import matplotlib.pyplot as plt
 
-
 # Create a simple training dataset
 mnist = MnistDataloader(
     "./input/train-images-idx3-ubyte/train-images-idx3-ubyte",
@@ -14,18 +13,27 @@ mnist_data, mnist_test = mnist.load_data()
 images, labels = mnist_data
 
 training_data = []
-for i in range(2):
+for i in range(5):
     flattened_image = [pixel for sublist in images[i] for pixel in sublist]
     training_data.append(DataPoint(flattened_image, labels[i], 10))
 
 nn = NeuralNetwork(784, 89, 10)
-learning_rate = 0.7
-numberOfSteps = 10
-batch_size = 32  # Adjust the batch size as needed
+learning_rate = 0.1
+numberOfSteps = 100
+batch_size = 32
+
+costs = []
 
 
 print("Start")
 for i in range(numberOfSteps):
     nn.learn(training_data, learning_rate, batch_size)
-    print("Step: ", i, " Cost: ", nn.total_cost(training_data))
-    
+    cost = nn.total_cost(training_data)
+    costs.append(cost)
+    print("Step: ", i, " Cost: ", cost)
+
+plt.plot(costs)
+plt.xlabel('Iteration')
+plt.ylabel('Cost')
+plt.title('Training progress')
+plt.show()

@@ -6,86 +6,54 @@ import activation_functions as af
 
 
 class NeuralNetwork:
-    ##Neural Network.
-
     def __init__(self, *nOfNodesInLayers):
-        ##Neural network constructor.
-        # @param nOfLayers (int): Number of nodes in each layer: (hidden, hidden, ..., output)
-        # The last argument is the number of output nodes.
-        # The arguments in between are the number of nodes in each hidden layer.
         self.layers = []
         for i in range(len(nOfNodesInLayers) - 1):
             self.layers.append(Layer(nOfNodesInLayers[i], nOfNodesInLayers[i + 1]))
 
     def calculate_outputs(self, inputs):
-        ##Calculates outputs of the neural network based on the given inputs.
-        # @param inputs (float[]): Inputs to the neural network.
-        # @return float[]: Outputs of the neural network.
-
         outputs = inputs
         for layer in self.layers:
             outputs = layer.calculate_outputs(outputs)
         return outputs
-
-    def cost(self, data_point):
-        outputs = self.calculate_outputs(data_point.inputs)
-        output_layer = self.layers[-1]
-        cost = 0
-
-        for i in range(len(outputs)):
-            cost += output_layer.node_cost(outputs[i], data_point.expected_outputs[i])
-        return cost
 
     def total_cost(self, data):
         outputs = np.array([self.calculate_outputs(dp.inputs) for dp in data])
         expected_outputs = np.array([dp.expected_outputs for dp in data])
         return np.mean(np.sum((outputs - expected_outputs) ** 2, axis=-1))
 
-
     def learn(self, training_data, learning_rate, batch_size):
         h = 0.0001
-        original_cost = self.total_cost(training_data)
 
-        # Shuffle the training data to introduce randomness
         np.random.shuffle(training_data)
 
         for start in range(0, len(training_data), batch_size):
             end = start + batch_size
             batch = training_data[start:end]
 
-            # Accumulate gradient updates over the batch
             for layer in self.layers:
                 layer_gradient_w = np.zeros_like(layer.weights)
                 layer_gradient_b = np.zeros_like(layer.biases)
 
                 for data_point in batch:
-                    # Calculate gradients for weights using vectorized operations
-                    delta_cost_w = np.zeros_like(layer.weights)
-                    for node_in in range(layer.num_nodes_in):
-                        for node_out in range(layer.num_nodes_out):
-                            layer.weights[node_in, node_out] += h
-                            delta_cost_w[node_in, node_out] = self.total_cost(batch) - original_cost
-                            layer.weights[node_in, node_out] -= h
+                    original_weights = layer.weights.copy()
+                    original_biases = layer.biases.copy()
 
-                    # Calculate gradients for biases using vectorized operations
-                    delta_cost_b = np.zeros_like(layer.biases)
-                    for bias_index in range(len(layer.biases)):
-                        layer.biases[bias_index] += h
-                        delta_cost_b[bias_index] = self.total_cost(batch) - original_cost
-                        layer.biases[bias_index] -= h
+                    delta_cost_w = (self.total_cost(batch) - self.total_cost(batch)) / h
+                    delta_cost_b = (self.total_cost(batch) - self.total_cost(batch)) / h
 
-                    # Accumulate gradients over the batch
-                    layer_gradient_w += delta_cost_w / h
-                    layer_gradient_b += delta_cost_b / h
+                    layer.weights = original_weights
+                    layer.biases = original_biases
 
-                # Update weights and biases using accumulated gradients
+                    layer_gradient_w += delta_cost_w
+                    layer_gradient_b += delta_cost_b
+
                 layer.weights -= learning_rate * (layer_gradient_w / len(batch))
                 layer.biases -= learning_rate * (layer_gradient_b / len(batch))
 
-        self.apply_gradients(learning_rate)
-
-
-
+        for layer in self.layers:
+            layer.apply_gradients(learning_rate)
+        
 
 class Layer:
     ##Layer within a Neural Network.
