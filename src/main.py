@@ -14,12 +14,12 @@ mnist_data, mnist_test = mnist.load_data()
 images, labels = mnist_data
 
 training_data = []
-for i in range(len(images)):
+for i in range(2):
     flattened_image = [pixel for sublist in images[i] for pixel in sublist]
     training_data.append(DataPoint(flattened_image, labels[i], 10))
 
 nn = NeuralNetwork(784, 89, 10)
-learning_rate = 1
+learning_rate = 0.85
 numberOfSteps = 1000
 print("Start")
 for i in range(numberOfSteps):
