@@ -2,6 +2,7 @@
 # Activation functions for neural networks.
 
 import math
+import numpy as np
 
 
 ##Identity function.
@@ -34,7 +35,7 @@ def binary_step(x):
 # @param x (float): Input value.
 # @return float: Sigmoid of input value.
 def sigmoid(x):
-    return 1 / (1 + math.exp(-x))
+    return 1 / (1 + np.exp(-x))
 
 
 ##Hyperbolic tangent function.

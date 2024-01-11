@@ -1,27 +1,11 @@
-##@package neural_network
-# Neural network implementation.
-
 import numpy as np
 import activation_functions as af
 
-
 class NeuralNetwork:
-    ##Neural Network.
-
     def __init__(self, *nOfNodesInLayers):
-        ##Neural network constructor.
-        # @param nOfLayers (int): Number of nodes in each layer: (hidden, hidden, ..., output)
-        # The last argument is the number of output nodes.
-        # The arguments in between are the number of nodes in each hidden layer.
-        self.layers = []
-        for i in range(len(nOfNodesInLayers) - 1):
-            self.layers.append(Layer(nOfNodesInLayers[i], nOfNodesInLayers[i + 1]))
+        self.layers = [Layer(nOfNodesInLayers[i], nOfNodesInLayers[i + 1]) for i in range(len(nOfNodesInLayers) - 1)]
 
     def calculate_outputs(self, inputs):
-        ##Calculates outputs of the neural network based on the given inputs.
-        # @param inputs (float[]): Inputs to the neural network.
-        # @return float[]: Outputs of the neural network.
-
         outputs = inputs
         for layer in self.layers:
             outputs = layer.calculate_outputs(outputs)
@@ -37,41 +21,31 @@ class NeuralNetwork:
         return cost
 
     def total_cost(self, data):
-        total_cost = 0
-        for data_point in data:
-            total_cost += self.cost(data_point)
+        total_cost = sum(self.cost(data_point) for data_point in data)
         return total_cost / len(data)
 
     def learn(self, training_data, learning_rate):
-        h = 0.0001
-        original_cost = self.total_cost(training_data)
-        for layer in self.layers:
-            for node_in in range(layer.num_nodes_in):
-                for node_out in range(layer.num_nodes_out):
-                    layer.weights[node_in, node_out] += h
-                    delta_cost = self.total_cost(training_data) - original_cost
-                    layer.weights[node_in, node_out] -= h
-                    layer.cost_gradient_w[node_in, node_out] = delta_cost / h
-            for bias_index in range(len(layer.biases)):
-                layer.biases[bias_index] += h
-                delta_cost = self.total_cost(training_data) - original_cost
-                layer.biases[bias_index] -= h
-                layer.cost_gradient_b[bias_index] = delta_cost / h
+        for data_point in training_data:
+            self.backpropagate(data_point)
         self.apply_gradients(learning_rate)
+
+    def backpropagate(self, data_point):
+        # Backpropagation
+        outputs = self.calculate_outputs(data_point.inputs)
+        deltas = [output - expected_output for output, expected_output in zip(outputs, data_point.expected_outputs)]
+
+        for i in reversed(range(len(self.layers))):
+            layer = self.layers[i]
+            inputs = data_point.inputs if i == 0 else self.layers[i - 1].calculate_outputs(data_point.inputs)
+            layer.calculate_gradients(inputs, deltas)
+            deltas = np.dot(layer.weights, deltas)
 
     def apply_gradients(self, learning_rate):
         for layer in self.layers:
             layer.apply_gradients(learning_rate)
 
-
 class Layer:
-    ##Layer within a Neural Network.
-
     def __init__(self, num_nodes_in, num_nodes_out):
-        ##Layer constructor.
-        # @param num_nodes_in (int): Number of nodes in the previous layer.
-        # @param num_nodes_out (int): Number of nodes in the current layer.
-
         self.num_nodes_in = num_nodes_in
         self.num_nodes_out = num_nodes_out
         self.weights = np.random.rand(self.num_nodes_in, self.num_nodes_out)
@@ -83,20 +57,15 @@ class Layer:
         error = expected_output - output_activation
         return error * error
 
-    def apply_gradients(self, learning_rate):
-        ##Applies the gradients to the weights and biases.
-        # @param learning_rate (float): Learning rate of the neural network.
-
-        self.biases -= learning_rate * self.cost_gradient_b
-        self.weights -= learning_rate * self.cost_gradient_w
-
     def calculate_outputs(self, inputs):
-        ##Calculates outputs of the layer based on the given inputs.
-        # @param inputs (float[]): Inputs to the layer.
-        # @return float[]: Outputs of the layer.
-
         weighted_inputs = np.dot(inputs, self.weights) + self.biases
-        outputs = []
-        for weighted_input in weighted_inputs:
-            outputs.append(af.sigmoid(weighted_input))
+        outputs = af.sigmoid(weighted_inputs)
         return outputs
+
+    def calculate_gradients(self, inputs, deltas):
+        self.cost_gradient_w = np.outer(inputs, deltas)
+        self.cost_gradient_b = np.array(deltas)
+
+    def apply_gradients(self, learning_rate):
+        self.weights -= learning_rate * self.cost_gradient_w
+        self.biases -= learning_rate * self.cost_gradient_b
