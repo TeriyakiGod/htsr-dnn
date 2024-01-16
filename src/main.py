@@ -2,9 +2,9 @@ from data import DataPoint, MnistDataloader
 from neural_network import NeuralNetwork
 import matplotlib.pyplot as plt
 import time
+import user_interface as ui
+import tkinter as tk
 
-
-# Create a simple training dataset
 mnist = MnistDataloader(
     "./input/train-images-idx3-ubyte/train-images-idx3-ubyte",
     "./input/train-labels-idx1-ubyte/train-labels-idx1-ubyte",
@@ -20,9 +20,9 @@ for i in range(1000):
     training_data.append(DataPoint(flattened_image, labels[i], 10))
 
 nn = NeuralNetwork(784, 2, 10)
-learning_rate = 0.85
+learning_rate = 0.9
 batch_size = 128
-numberOfSteps = 50
+numberOfSteps = 1
 batches = []
 
 for i in range(0, len(training_data), batch_size):
@@ -45,3 +45,7 @@ for i in range(numberOfSteps):
 end_time = time.time()
 total_duration = end_time - start_time
 print(f"Training complete. Total time: {total_duration} seconds")
+
+paint_root = tk.Tk()
+paint_app = ui.UserInterface(root=paint_root, training_data=training_data)
+paint_root.mainloop()
