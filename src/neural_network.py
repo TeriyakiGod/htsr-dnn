@@ -42,7 +42,6 @@ class NeuralNetwork:
 
     def apply_gradients(self, learning_rate):
         for layer in self.layers:
-            layer.apply_gradients(learning_rate)
             if self.layers.index(layer) == 0:
                 continue
             else:
