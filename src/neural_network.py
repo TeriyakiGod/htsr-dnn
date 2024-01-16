@@ -42,6 +42,7 @@ class NeuralNetwork:
 
     def apply_gradients(self, learning_rate):
         for layer in self.layers:
+            layer.apply_gradients(learning_rate)
             if self.layers.index(layer) == 0:
                 continue
             else:
@@ -66,6 +67,7 @@ class Layer:
         self.biases = np.random.randn(self.num_nodes_out)
         self.cost_gradient_w = np.zeros((self.num_nodes_in, self.num_nodes_out))
         self.cost_gradient_b = np.zeros(self.num_nodes_out)
+        self.weight_constant = 0.9
 
     def node_cost(self, output_activation, expected_output):
         error = expected_output - output_activation
@@ -74,6 +76,10 @@ class Layer:
     def calculate_outputs(self, inputs):
         weighted_inputs = np.dot(inputs, self.weights) + self.biases
         outputs = af.sigmoid(weighted_inputs)
+
+        delta_weights = self.weights - self.prev_weights if hasattr(self, 'prev_weights') else np.zeros_like(self.weights)
+        self.weights += self.weight_constant * delta_weights
+
         return outputs
 
     def calculate_gradients(self, inputs, deltas):
@@ -81,9 +87,5 @@ class Layer:
         self.cost_gradient_b = np.array(deltas)
 
     def apply_gradients(self, learning_rate):
-        #delta_weights = self.weights - self.prev_weights if hasattr(self, 'prev_weights') else np.zeros_like(self.weights)
-        #self.weights += learning_rate * self.cost_gradient_w + weight_constant * learning_rate * delta_weights
-        #self.biases += learning_rate * self.cost_gradient_b
-        #self.prev_weights = np.copy(self.weights)
         self.weights -= learning_rate * self.cost_gradient_w
         self.biases -= learning_rate * self.cost_gradient_b
