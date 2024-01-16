@@ -2,6 +2,7 @@
 # Activation functions for neural networks.
 
 import math
+import numpy as np
 
 
 ##Identity function.
@@ -34,7 +35,8 @@ def binary_step(x):
 # @param x (float): Input value.
 # @return float: Sigmoid of input value.
 def sigmoid(x):
-    return 1 / (1 + math.exp(-x))
+    x = np.clip(x, -500, 500)  # limit the values of x to prevent overflow
+    return 1 / (1 + np.exp(-x))
 
 
 ##Hyperbolic tangent function.
@@ -77,6 +79,7 @@ def gelu(x):
 # @param x (float): Input value.
 # @return float: Softplus of input value.
 def softplus(x):
+    x = np.clip(x, -500, 500)  # limit the values of x to prevent overflow
     return math.log(1 + math.exp(x))
 
 
