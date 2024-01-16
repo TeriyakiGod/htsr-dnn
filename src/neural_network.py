@@ -4,6 +4,7 @@ import activation_functions as af
 class NeuralNetwork:
     def __init__(self, *nOfNodesInLayers):
         self.layers = [Layer(nOfNodesInLayers[i], nOfNodesInLayers[i + 1]) for i in range(len(nOfNodesInLayers) - 1)]
+        self.weight_constant = 0.2
 
     def calculate_outputs(self, inputs):
         outputs = inputs
@@ -30,7 +31,6 @@ class NeuralNetwork:
         self.apply_gradients(learning_rate)
 
     def backpropagate(self, data_point):
-        # Backpropagation
         outputs = self.calculate_outputs(data_point.inputs)
         deltas = [output - expected_output for output, expected_output in zip(outputs, data_point.expected_outputs)]
 
@@ -42,7 +42,7 @@ class NeuralNetwork:
 
     def apply_gradients(self, learning_rate):
         for layer in self.layers:
-            layer.apply_gradients(learning_rate)
+            layer.apply_gradients(learning_rate, self.weight_constant)
 
 class Layer:
     def __init__(self, num_nodes_in, num_nodes_out):
@@ -66,6 +66,10 @@ class Layer:
         self.cost_gradient_w = np.outer(inputs, deltas)
         self.cost_gradient_b = np.array(deltas)
 
-    def apply_gradients(self, learning_rate):
+    def apply_gradients(self, learning_rate, weight_constant):
+        #delta_weights = self.weights - self.prev_weights if hasattr(self, 'prev_weights') else np.zeros_like(self.weights)
+        #self.weights += learning_rate * self.cost_gradient_w + weight_constant * learning_rate * delta_weights
+        #self.biases += learning_rate * self.cost_gradient_b
+        #self.prev_weights = np.copy(self.weights)
         self.weights -= learning_rate * self.cost_gradient_w
         self.biases -= learning_rate * self.cost_gradient_b
