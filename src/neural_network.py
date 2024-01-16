@@ -75,10 +75,6 @@ class Layer:
     def calculate_outputs(self, inputs):
         weighted_inputs = np.dot(inputs, self.weights) + self.biases
         outputs = af.sigmoid(weighted_inputs)
-
-        delta_weights = self.weights - self.prev_weights if hasattr(self, 'prev_weights') else np.zeros_like(self.weights)
-        self.weights += self.weight_constant * delta_weights
-
         return outputs
 
     def calculate_gradients(self, inputs, deltas):
