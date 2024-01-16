@@ -19,7 +19,7 @@ for i in range(len(images)):
     training_data.append(DataPoint(flattened_image, labels[i], 10))
 
 nn = NeuralNetwork(784, 89, 10)
-learning_rate = 0.1
+learning_rate = 0.2
 batch_size = 32
 numberOfSteps = 1000
 # Create batches
@@ -27,10 +27,21 @@ batches = []
 for i in range(0, len(training_data), batch_size):
     batches.append(training_data[i:i + batch_size])
 print("Start")
+
+fig, (ax1, ax2) = plt.subplots(2, 1)
+
+ax1.axis([0, numberOfSteps, 0, 1])
+ax2.axis([0, len(batches), 0, 1])
+ax1.clear()
 for i in range(numberOfSteps):
-    
     # Train on each batch
+    ax2.clear()
+    
     for j in range(len(batches)):
         nn.learn(batches[j], learning_rate)
         print("Batch: ", j, " Cost: ", nn.total_cost(batches[j]))
+        ax2.scatter(j, nn.total_cost(batches[j]), marker='x')
+        plt.pause(0.05)
     print("Step: ", i, " Cost: ", nn.total_cost(training_data))
+    ax1.scatter(i, nn.total_cost(training_data), marker='x')
+plt.show()
