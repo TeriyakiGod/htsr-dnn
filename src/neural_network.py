@@ -1,15 +1,15 @@
 import numpy as np
 import activation_functions as af
+import pickle
 
 class NeuralNetwork:
     def __init__(self, *nOfNodesInLayers):
         self.layers = [Layer(nOfNodesInLayers[i], nOfNodesInLayers[i + 1]) for i in range(len(nOfNodesInLayers) - 1)]
 
     def calculate_outputs(self, inputs):
-        outputs = inputs
         for layer in self.layers:
-            outputs = layer.calculate_outputs(outputs)
-        return outputs
+            inputs = layer.calculate_outputs(inputs)
+        return inputs
 
     def cost(self, data_point):
         outputs = self.calculate_outputs(data_point.inputs)
@@ -37,17 +37,33 @@ class NeuralNetwork:
             layer = self.layers[i]
             inputs = data_point.inputs if i == 0 else self.layers[i - 1].calculate_outputs(data_point.inputs)
             layer.calculate_gradients(inputs, deltas)
-            deltas = np.dot(layer.weights, deltas)
+            if i > 0 and i < len(self.layers) - 1:
+                deltas = np.dot(layer.weights, deltas) * af.sigmoid_derivative(layer.calculate_outputs(data_point.inputs))
 
     def apply_gradients(self, learning_rate):
         for layer in self.layers:
             layer.apply_gradients(learning_rate)
+            if self.layers.index(layer) == 0:
+                continue
+            else:
+                layer.apply_gradients(learning_rate)
+
+    def save_model(self, file_path):
+        with open(file_path, 'wb') as file:
+            pickle.dump(self, file)
+
+    @staticmethod
+    def load_model(file_path):
+        with open(file_path, 'rb') as file:
+            model = pickle.load(file)
+        return model
 
 class Layer:
     def __init__(self, num_nodes_in, num_nodes_out):
         self.num_nodes_in = num_nodes_in
         self.num_nodes_out = num_nodes_out
-        self.weights = np.random.rand(self.num_nodes_in, self.num_nodes_out)
+        # Xavier/Glorot initialization for weights
+        self.weights = np.random.randn(self.num_nodes_in, self.num_nodes_out) * np.sqrt(2.0 / (self.num_nodes_in + self.num_nodes_out))
         self.biases = np.random.randn(self.num_nodes_out)
         self.cost_gradient_w = np.zeros((self.num_nodes_in, self.num_nodes_out))
         self.cost_gradient_b = np.zeros(self.num_nodes_out)
