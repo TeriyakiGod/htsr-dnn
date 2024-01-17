@@ -49,8 +49,8 @@ class UserInterface:
         y_coordinate = (screen_height - self.canvas_size) // 2
 
         # Increase frame height to accommodate the text_widget
-        frame_width = self.canvas_size + 2 * (self.border_size + 10) + 175
-        frame_height = self.canvas_size + 2 * (self.border_size + 10) + 75
+        frame_width = self.canvas_size + 2 * (self.border_size + 10) + 250
+        frame_height = self.canvas_size + 2 * (self.border_size + 10) + 150
         self.root.geometry(f"{frame_width}x{frame_height}+{x_coordinate}+{y_coordinate}")
 
     def paint(self, event):
@@ -58,24 +58,21 @@ class UserInterface:
         square_x = x // self.square_size
         square_y = y // self.square_size
 
-        # Paint the square
         self.canvas.create_rectangle(
             square_x * self.square_size, square_y * self.square_size,
             (square_x + 1) * self.square_size, (square_y + 1) * self.square_size,
             fill="black"
         )
 
-        # Update text widget with similarity percentages
         similarity_percentages = self.calculate_similarity_percentages()
         self.update_text_widget(similarity_percentages)
 
-        # Update coordinates label
         self.coordinates_label.config(text=f"Coordinates: ({square_x}, {square_y})")
 
     def calculate_similarity_percentages(self):
-        # Add your logic here to calculate similarity percentages for digits 1 to 10
+        # Add your logic here to calculate similarity percentages for digits 0 to 9
         # For now, let's assume random values
-        return {i: random.uniform(0, 100) for i in range(1, 11)}
+        return {i: random.uniform(0, 100) for i in range(10)}
 
     def update_text_widget(self, similarity_percentages):
         self.text_widget.delete(1.0, tk.END)  # Clear previous content
@@ -83,24 +80,19 @@ class UserInterface:
         # Find the digit with the highest percentage
         max_digit = max(similarity_percentages, key=similarity_percentages.get)
 
-        # Replace Digit 10 with Digit 0 in the percentages dictionary
-        similarity_percentages[0] = similarity_percentages.pop(10) if 10 in similarity_percentages else 0
-
         # Sort the digits in ascending order
         sorted_digits = sorted(similarity_percentages.keys())
 
         for digit in sorted_digits:
             percentage = similarity_percentages[digit]
             background_color = "lightgreen" if digit == max_digit else "white"
-            # Display Digit 0 before Digit 1
-            digit_text = f"Digit {digit}" if digit != 0 else "Digit 0"
+            digit_text = f"Digit {digit}"
             self.text_widget.insert(tk.END, f"{digit_text}: {percentage:.2f}%\n")
-            self.text_widget.tag_configure(f"bg_{digit}", background=background_color)
-            self.text_widget.tag_add(f"bg_{digit}", f"{digit}.0", f"{digit + 1}.0")
-
+            self.text_widget.tag_configure(f"bg_{digit + 1}", background=background_color)
+            self.text_widget.tag_add(f"bg_{digit + 1}", f"{digit + 1}.0", f"{digit + 2}.0")
 
     def clear_matrix(self):
-        self.expected_output_text.config(text=f"Expected output: ")
+        self.expected_output_text.config(text="Expected output: ")
         painted_squares = self.canvas.find_all()
         for square in painted_squares:
             self.canvas.delete(square)
@@ -118,7 +110,6 @@ class UserInterface:
                     self.paint_square(row, col)
 
             self.expected_output_text.config(text=f"Expected output: {random_data_point.label}")
-
 
     def paint_square(self, row, col):
         self.canvas.create_rectangle(
