@@ -6,7 +6,6 @@ import user_interface as ui
 import tkinter as tk
 import os
 
-# Create a simple training dataset
 mnist = MnistDataloader(
     "./input/train-images-idx3-ubyte/train-images-idx3-ubyte",
     "./input/train-labels-idx1-ubyte/train-labels-idx1-ubyte",
@@ -17,15 +16,13 @@ mnist_data, mnist_test = mnist.load_data()
 images, labels = mnist_data
 
 nn = NeuralNetwork(784, 89, 10)
-# Load the last saved model if it exists
 if os.path.exists('model.pkl'):
     nn = NeuralNetwork.load_model('model.pkl')
 
 learning_rate = 0.5
 batch_size = 1024
-numberOfSteps = 0
+numberOfSteps = 1000
 
-# Create a figure for plotting
 fig = plt.figure()
 ax1 = fig.add_subplot(211)
 ax2 = fig.add_subplot(212)
@@ -59,5 +56,5 @@ total_duration = end_time - start_time
 print(f"Training complete. Total time: {total_duration} seconds")
 
 paint_root = tk.Tk()
-paint_app = ui.UserInterface(root=paint_root, training_data=training_data)
+paint_app = ui.UserInterface(root=paint_root, training_data=training_data, neural_network=nn)
 paint_root.mainloop()
