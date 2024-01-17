@@ -61,26 +61,28 @@ class UserInterface:
         square_x = x // self.square_size
         square_y = y // self.square_size
 
-        if event.state & 0x1:
-            self.canvas.create_rectangle(
-                square_x * self.square_size, square_y * self.square_size,
-                (square_x + 1) * self.square_size, (square_y + 1) * self.square_size,
-                fill="red"
-            )
-        else:
-            self.canvas.create_rectangle(
-                square_x * self.square_size, square_y * self.square_size,
-                (square_x + 1) * self.square_size, (square_y + 1) * self.square_size,
-                fill="black"
-            )
+        if 0 <= square_x < self.grid_size and 0 <= square_y < self.grid_size:
+            if event.state & 0x1:
+                self.canvas.create_rectangle(
+                    square_x * self.square_size, square_y * self.square_size,
+                    (square_x + 1) * self.square_size, (square_y + 1) * self.square_size,
+                    fill="red"
+                )
+            else:
+                self.canvas.create_rectangle(
+                    square_x * self.square_size, square_y * self.square_size,
+                    (square_x + 1) * self.square_size, (square_y + 1) * self.square_size,
+                    fill="black"
+                )
 
-        similarity_percentages = self.calculate_similarity_percentages(self.get_painted_matrix(), self.neural_network)
-        self.update_text_widget(similarity_percentages)
-        self.coordinates_label.config(text=f"Coordinates: ({square_x}, {square_y})")
+            similarity_percentages = self.calculate_similarity_percentages(self.get_painted_matrix(), self.neural_network)
+            self.update_text_widget(similarity_percentages)
+            self.coordinates_label.config(text=f"Coordinates: ({square_x}, {square_y})")
+
 
     def calculate_similarity_percentages(self, painted_matrix, neural_network):
         inputs = [255 if value > 0 else 0 for value in painted_matrix]
-        inputs = inputs[:784]  # Delete inputs[784] to inputs[max] to remove the white border
+        inputs = inputs[:784]
         outputs = neural_network.calculate_outputs(inputs)
 
         similarity_percentages = {i: output * 100 for i, output in enumerate(outputs)}
