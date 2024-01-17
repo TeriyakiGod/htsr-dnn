@@ -87,7 +87,6 @@ class UserInterface:
 
         similarity_percentages = {i: output * 100 for i, output in enumerate(outputs)}
         return similarity_percentages
-        #return {i: random.uniform(0, 100) for i in range(10)}
 
     def update_text_widget(self, similarity_percentages):
         self.text_widget.delete(1.0, tk.END)
@@ -121,6 +120,10 @@ class UserInterface:
                     self.paint_square(row, col)
 
             self.expected_output_text.config(text=f"Expected output: {random_data_point.label}")
+            
+            painted_matrix = self.get_painted_matrix()
+            similarity_percentages = self.calculate_similarity_percentages(painted_matrix, self.neural_network)
+            self.update_text_widget(similarity_percentages)
 
     def get_painted_matrix(self):
         matrix = np.zeros((self.grid_size, self.grid_size))
