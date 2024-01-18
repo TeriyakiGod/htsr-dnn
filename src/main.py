@@ -22,7 +22,7 @@ if os.path.exists('model.pkl'):
 
 learning_rate = 0.5
 batch_size = 128
-numberOfSteps = 10
+numberOfSteps = 5
 
 fig = plt.figure()
 ax1 = fig.add_subplot(211)

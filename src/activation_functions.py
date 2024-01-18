@@ -41,6 +41,10 @@ def sigmoid(x):
 def sigmoid_derivative(x):
     return sigmoid(x) * (1 - sigmoid(x))
 
+def softmax(x):
+    x = np.clip(x, -500, 500)  # limit the values of x to prevent overflow
+    return np.exp(x) / np.sum(np.exp(x), axis=0)
+
 ##Hyperbolic tangent function.
 # Range: (-1, 1)
 # @image html https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Activation_tanh.svg/120px-Activation_tanh.svg.png

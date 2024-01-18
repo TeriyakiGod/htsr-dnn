@@ -9,6 +9,9 @@ class NeuralNetwork:
     def calculate_outputs(self, inputs):
         for layer in self.layers:
             inputs = layer.calculate_outputs(inputs)
+            #use softmax for output layer
+            if self.layers.index(layer) == len(self.layers) - 1:
+                inputs = af.softmax(inputs)
         return inputs
 
     def cost(self, data_point):
@@ -66,7 +69,7 @@ class Layer:
         self.biases = np.random.randn(self.num_nodes_out)
         self.cost_gradient_w = np.zeros((self.num_nodes_in, self.num_nodes_out))
         self.cost_gradient_b = np.zeros(self.num_nodes_out)
-        self.weight_constant = 0.9
+        #self.weight_constant = 0.9
 
     def node_cost(self, output_activation, expected_output):
         error = expected_output - output_activation
