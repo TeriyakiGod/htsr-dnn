@@ -1,9 +1,6 @@
 from data import DataPoint, MnistDataloader
 from neural_network import NeuralNetwork
 import matplotlib.pyplot as plt
-import time
-import user_interface as ui
-import tkinter as tk
 import os
 
 mnist = MnistDataloader(
@@ -19,8 +16,8 @@ nn = NeuralNetwork(784, 89, 10)
 if os.path.exists('model.pkl'):
     nn = NeuralNetwork.load_model('model.pkl')
 
-learning_rate = 0.5
-batch_size = 1024
+learning_rate = 0.8
+batch_size = 100
 numberOfSteps = 1000
 
 fig = plt.figure()
@@ -28,7 +25,7 @@ ax1 = fig.add_subplot(211)
 ax2 = fig.add_subplot(212)
 
 training_data = []
-for j in range(len(images)):
+for j in range(1000):
     flattened_image = [pixel for sublist in images[j] for pixel in sublist]
     training_data.append(DataPoint(flattened_image, labels[j], 10))
 batches = []
@@ -36,7 +33,6 @@ for j in range(0, len(training_data), batch_size):
     batches.append(training_data[j:j + batch_size])
 
 print("Data loaded. Starting training...")
-start_time = time.time()
 
 for i in range(numberOfSteps):
     ax2.clear()
@@ -51,10 +47,3 @@ for i in range(numberOfSteps):
     ax1.scatter(i, nn.total_cost(training_data), marker='x')
 plt.show()
 
-end_time = time.time()
-total_duration = end_time - start_time
-print(f"Training complete. Total time: {total_duration} seconds")
-
-paint_root = tk.Tk()
-paint_app = ui.UserInterface(root=paint_root, training_data=training_data, neural_network=nn)
-paint_root.mainloop()
