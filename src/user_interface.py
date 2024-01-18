@@ -84,7 +84,9 @@ class UserInterface:
         inputs = [255 if value > 0 else 0 for value in painted_matrix]
         inputs = inputs[:784]
         outputs = neural_network.calculate_outputs(inputs)
-
+        outputs = np.exp(outputs) / np.sum(np.exp(outputs))
+        print("outputs: " ,outputs)
+        print("sum: ", np.sum(outputs))
         similarity_percentages = {i: output * 100 for i, output in enumerate(outputs)}
         return similarity_percentages
 

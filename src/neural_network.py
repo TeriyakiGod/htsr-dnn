@@ -83,6 +83,7 @@ class Layer:
 
     @jit
     def calculate_outputs(self, inputs):
+        inputs = np.array(inputs).reshape(1, -1)
         weighted_inputs = np.dot(inputs, self.weights) + self.biases
         outputs = af.sigmoid(weighted_inputs)
         return outputs
