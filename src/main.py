@@ -17,18 +17,19 @@ images, labels = mnist_data
 
 nn = NeuralNetwork(784, 89, 10)
 if os.path.exists('model.pkl'):
+    print("Loading existing model...")
     nn = NeuralNetwork.load_model('model.pkl')
 
 learning_rate = 0.5
-batch_size = 1024
-numberOfSteps = 1000
+batch_size = 128
+numberOfSteps = 10
 
 fig = plt.figure()
 ax1 = fig.add_subplot(211)
 ax2 = fig.add_subplot(212)
 
 training_data = []
-for j in range(len(images)):
+for j in range(20000):
     flattened_image = [pixel for sublist in images[j] for pixel in sublist]
     training_data.append(DataPoint(flattened_image, labels[j], 10))
 batches = []
@@ -40,6 +41,7 @@ start_time = time.time()
 
 for i in range(numberOfSteps):
     ax2.clear()
+    step_start_time = time.time()
     for j in range(len(batches)):
         nn.learn(batches[j], learning_rate)
         print("Step: ", i, "Batch: ", j, " Cost: ", nn.total_cost(batches[j]))
@@ -49,6 +51,9 @@ for i in range(numberOfSteps):
     print("Step: ", i, " Cost: ", nn.total_cost(training_data))
     learning_rate *= 0.95
     ax1.scatter(i, nn.total_cost(training_data), marker='x')
+    step_end_time = time.time()
+    step_duration = step_end_time - step_start_time
+    print(f"Time for step {i}: {step_duration} seconds")
 plt.show()
 
 end_time = time.time()
