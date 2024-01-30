@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\contentsline {section}{\numberline {2}Our Goal}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Specific Objectives}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Expected Outcomes}{2}{}%
+\contentsline {section}{\numberline {3}Decision boundary }{3}{}%
+\contentsline {section}{\numberline {4}Weights and biases - Pawel}{3}{}%
+\contentsline {section}{\numberline {5}Hidden layers}{3}{}%
+\contentsline {section}{\numberline {6}Activation functions - Pawel}{3}{}%
+\contentsline {section}{\numberline {7}Cost function}{3}{}%
+\contentsline {section}{\numberline {8}Gradient descent - Pawel}{3}{}%
+\contentsline {section}{\numberline {9}Cost landscape}{3}{}%
+\contentsline {section}{\numberline {10}Learning algorithm - naive approach - Pawel}{3}{}%
+\contentsline {section}{\numberline {11}Learning algorithm - calculus approach}{3}{}%
+\contentsline {section}{\numberline {12}Learning algorithm - digit recognition - Pawel}{3}{}%
+\contentsline {section}{\numberline {13}Chain rule - Pawel}{4}{}%
+\contentsline {section}{\numberline {14}Backpropagation}{4}{}%
+\contentsline {section}{\numberline {15}Testing the network}{4}{}%
+\contentsline {section}{\numberline {16}Conclusion}{4}{}%
