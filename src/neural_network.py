@@ -68,7 +68,6 @@ class Layer:
     def __init__(self, num_nodes_in, num_nodes_out):
         self.num_nodes_in = num_nodes_in
         self.num_nodes_out = num_nodes_out
-        # Xavier/Glorot initialization for weights
         self.weights = np.random.randn(self.num_nodes_in, self.num_nodes_out) * np.sqrt(2.0 / (self.num_nodes_in + self.num_nodes_out))
         self.biases = np.random.randn(self.num_nodes_out)
         self.cost_gradient_w = np.zeros((self.num_nodes_in, self.num_nodes_out))
@@ -82,7 +81,6 @@ class Layer:
 
     
     def calculate_outputs(self, inputs):
-        
         weighted_inputs = np.dot(inputs, self.weights) + self.biases
         outputs = af.sigmoid(weighted_inputs)
         return outputs
