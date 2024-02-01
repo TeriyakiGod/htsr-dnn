@@ -11,12 +11,12 @@
 \contentsline {subsection}{\numberline {6.1}Sigmoid function}{7}{}%
 \contentsline {subsection}{\numberline {6.2}The derivative of the sigmoid function}{7}{}%
 \contentsline {section}{\numberline {7}Cost function - Kacper}{9}{}%
-\contentsline {section}{\numberline {8}Gradient descent - Pawel}{10}{}%
-\contentsline {section}{\numberline {9}Cost landscape - Kacper}{11}{}%
-\contentsline {section}{\numberline {10}Learning algorithm - naive approach - Pawel}{12}{}%
-\contentsline {section}{\numberline {11}Learning algorithm - calculus approach - Kacper}{13}{}%
-\contentsline {section}{\numberline {12}Learning algorithm - digit recognition - Pawel}{14}{}%
-\contentsline {section}{\numberline {13}Chain rule - Pawel/Kacper}{15}{}%
-\contentsline {section}{\numberline {14}Backpropagation - Kacper}{16}{}%
-\contentsline {section}{\numberline {15}Testing the network - Kacper}{17}{}%
-\contentsline {section}{\numberline {16}Conclusion - Pawel}{18}{}%
+\contentsline {section}{\numberline {8}Gradient descent and backpropagation - Pawel [Done]}{10}{}%
+\contentsline {subsection}{\numberline {8.1}Gradients of the cost function}{10}{}%
+\contentsline {subsection}{\numberline {8.2}Data loading and learning}{11}{}%
+\contentsline {subsection}{\numberline {8.3}Backpropagation}{12}{}%
+\contentsline {section}{\numberline {9}Cost landscape - Kacper}{13}{}%
+\contentsline {section}{\numberline {10}Learning algorithm - naive approach, calculus approach, digit recognition - Kacper}{14}{}%
+\contentsline {section}{\numberline {11}Chain rule - Kacper}{15}{}%
+\contentsline {section}{\numberline {12}Testing the network - Kacper}{16}{}%
+\contentsline {section}{\numberline {13}Conclusion - Pawel}{17}{}%

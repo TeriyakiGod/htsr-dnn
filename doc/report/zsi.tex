@@ -35,6 +35,8 @@
 
 \section{Introduction - Kacper}
 Handwritten text symbol recognition with deep neural networks.
+Feed Forward Networks (FFN)
+In feedforward neural network input moves from input to output layer. Backpropagation is propagatin the error backward from the output to the input layer.
 
 \newpage
 \section{Our goal - Pawel  [Done]}
@@ -75,7 +77,7 @@ Weights are indicators of the importance of the input in predicting the final ou
 \subsection{Initialization}
 The \texttt{Layer} class represents a single layer in the neural network. It contains information about the number of nodes in and out, weights, biases, and gradients. The neural network is initialized with random weights using the Xavier/Glorot initialization technique. This method helps in achieving better convergence during training.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering 
     \includegraphics[width=1\textwidth]{images/Xavier-Glorot-initialization-for-weights.png}
     \caption{Initialization of random biases and weights using Xavier/Glorot technique}
@@ -86,7 +88,7 @@ When a neural network is first trained, it is first fed with input. Since it isn
 
 \subsection{Weighted sum of inputs}
 In the \texttt{Layer} class, the calculation of outputs begins with the computation of weighted inputs. For each node in the layer, the weighted inputs are calculated using the formula.:
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=1\textwidth]{images/dot-product-of-inputs-and-weights.png}
     \caption{The dot product of inputs and weights, representing the weighted sum of inputs}
@@ -125,7 +127,7 @@ The sigmoid function squashes its input to the range (0, 1), making it suitable 
     \end{tikzpicture}
 \end{equation}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{images/sigmoid-function.png}
     \caption{Sigmoid function}
@@ -140,7 +142,7 @@ The derivative of the sigmoid function is used in the backpropagation algorithm 
     f'(x) = f(x) \cdot (1 - f(x))
 \end{equation}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{images/sigmoid-derivative.png}
     \caption{The derivative of the sigmoid function}
@@ -152,15 +154,76 @@ The derivative of the sigmoid function is used in the backpropagation algorithm 
 ...
 
 \newpage
-\section{Gradient descent - Pawel}
+\section{Gradient descent and backpropagation - Pawel [Done]}
+\subsection{Gradients of the cost function}
+\textbf{Gradient Descent} - Is an optimization algorithm that is used to find the weights that minimize the cost function. 
+We need two things to do so. Direction in which to navigate and the size of the steps for navigating.
+To know which direction to navigate the cost function, gradient descent uses backpropagation. More specifically, it uses the gradients calculated through backpropagation. These gradients are used for determining the direction to navigate to find the minimum point. Descresing slope will lead us to the minimum point.
 The cost gradients for weights and biases are initialized with zeros, and during training, these gradients will be updated based on the backpropagation algorithm.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering 
     \includegraphics[width=1\textwidth]{images/Xavier-Glorot-initialization-for-weights.png}
     \caption{Initialization a vector of zeros with the same length as the bias vector}
     \label{fig:initialized_cost_gradient}
-	\subcaption*{This matrix will be used to accumulate the gradients of the cost function with respect to the weights during the backpropagation process.	}
+	\subcaption*{This matrix will be used to accumulate the gradients of the cost function with respect to the weights during the backpropagation process.}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/apply-gradients.png}
+    \caption{The \texttt{apply\_gradients} method in \texttt{Neural network} class  updates the weights and biases for each layer.}
+    \label{fig:apply_gradients}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/layer-gradient.png}
+    \caption{The \texttt{apply\_gradients} method in \texttt{Layer} class updates the weights and biases for a layer.}
+    \label{fig:apply_gradients_on_layer}
+    \subcaption*{The \texttt{apply gradients} method is responsible for updating the weights and biases of a layer based on the calculated gradients.}
+\end{figure}
+
+\newpage
+\subsection{Data loading and learning}
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/data-load.png}
+    \caption{Data loading from mnist and creating a neural network}
+    \label{fig:data_load}
+    \subcaption*{A neural network is instantiated with the specified architecture: 784 input nodes, one hidden layer with 89 nodes, and 10 output nodes. Checks if a pre-trained model file \texttt{model.pkl} exists.If it does, the model is loaded from the file. Otherwise, the model is trained using the MNIST dataset.}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/main.png}
+    \caption{Training a neural network using a simple form of gradient descent on the MNIST dataset.}
+    \label{fig:learn}
+    \subcaption*{\textbf{Learning rate} - determines the step size at each iteration of gradient descent and the speed at which we move down the slope. Learning rate plays important role in between optimization time and accuracy. Step size is measured by a parameter alpha $\alpha$. Small $\alpha$ means small step size, large $\alpha$ means large step size. If its too large then it can jump through minimum of the function. This parameter needs to be optimized. High learning rate results in a higher step value and opposite.\\ \textbf{Batch size} refers to the number of training examples utilized in one iteration. \\ \textbf{The number of steps}, represents the total number of times the entire training dataset is passed forward and backward through the neural network. Too few steps may lead to underfitting, while too many steps may result in overfitting on the training data. The optimal number of steps depends on the complexity of the task and the dataset.}
+\end{figure}
+
+\newpage
+\subsection{Backpropagation}
+\textbf{Backpropagation} - is a training algorithm for feedforward neural networks that propagates the error backward from the output to the input layer.
+It plays a crucial role in gradient descent, a process of finding the minimum of the cost function. 
+Gradient descent relies on backpropagation to calculate gradients by moving backward in the neural network.
+Together, backpropagation and gradient descent is used for the purpose of improving the prediction accuracy of neural networks. 
+They help improve prediction accuracy by reducing the output error in neural networks.
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/backpropagate.png}
+    \caption{The \texttt{backpropagate} function is part of the neural network training process.}
+    \label{fig:backpropagation}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/calculate-gradients.png}
+    \caption{The \texttt{calculate\_gradients} method computes the gradients needed for the weight and bias adjustments.}
+    \label{fig:calculate_gradients}
+    \subcaption*{It represents how much the weights and biases should be changed to minimize the difference between the predicted and expected outputs. It's like figuring out the direction and magnitude of the correction needed to improve the network's performance.}
 \end{figure}
 
 \newpage
@@ -168,23 +231,12 @@ The cost gradients for weights and biases are initialized with zeros, and during
 ...
 
 \newpage
-\section{Learning algorithm - naive approach - Pawel}
+\section{Learning algorithm - naive approach, calculus approach, digit recognition - Kacper}
+Kacper you should check other sections because there could be duplicates!
 ...
 
 \newpage
-\section{Learning algorithm - calculus approach - Kacper}
-...
-
-\newpage
-\section{Learning algorithm - digit recognition - Pawel}
-...
-
-\newpage
-\section{Chain rule - Pawel/Kacper}
-...
-
-\newpage
-\section{Backpropagation - Kacper}
+\section{Chain rule - Kacper}
 ...
 
 \newpage

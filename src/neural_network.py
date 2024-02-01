@@ -6,13 +6,11 @@ import pickle
 class NeuralNetwork:
     def __init__(self, *nOfNodesInLayers):
         self.layers = [Layer(nOfNodesInLayers[i], nOfNodesInLayers[i + 1]) for i in range(len(nOfNodesInLayers) - 1)]
-
     
     def calculate_outputs(self, inputs):
         for layer in self.layers:
             inputs = layer.calculate_outputs(inputs)
         return inputs
-    
     
     def cost(self, data_point):
         outputs = self.calculate_outputs(data_point.inputs)
@@ -23,17 +21,14 @@ class NeuralNetwork:
             cost += output_layer.node_cost(outputs[i], data_point.expected_outputs[i])
         return cost
 
-    
     def total_cost(self, data):
         total_cost = sum(self.cost(data_point) for data_point in data)
         return total_cost / len(data)
-
     
     def learn(self, training_data, learning_rate):
         for data_point in training_data:
             self.backpropagate(data_point)
         self.apply_gradients(learning_rate)
-
     
     def backpropagate(self, data_point):
         outputs = self.calculate_outputs(data_point.inputs)
@@ -46,7 +41,6 @@ class NeuralNetwork:
             if i > 0 and i < len(self.layers) - 1:
                 deltas = np.dot(layer.weights, deltas) * af.sigmoid_derivative(layer.calculate_outputs(data_point.inputs))
 
-    
     def apply_gradients(self, learning_rate):
         for layer in self.layers:
             if self.layers.index(layer) == 0:
@@ -73,12 +67,10 @@ class Layer:
         self.cost_gradient_w = np.zeros((self.num_nodes_in, self.num_nodes_out))
         self.cost_gradient_b = np.zeros(self.num_nodes_out)
         self.weight_constant = 0.9
-
     
     def node_cost(self, output_activation, expected_output):
         error = expected_output - output_activation
         return error * error
-
     
     def calculate_outputs(self, inputs):
         weighted_inputs = np.dot(inputs, self.weights) + self.biases
