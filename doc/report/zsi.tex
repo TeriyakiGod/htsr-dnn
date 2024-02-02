@@ -34,9 +34,7 @@
 \newpage
 
 \section{Introduction - Kacper}
-Handwritten text symbol recognition with deep neural networks.
-Feed Forward Networks (FFN)
-In feedforward neural network input moves from input to output layer. Backpropagation is propagatin the error backward from the output to the input layer.
+The significance of digit recognition in the realm of artificial intelligence cannot be overstated, particularly in its application to handwritten digits. This project delves into the intricate process of teaching an AI model to discern and interpret handwritten numerals. With a myriad of potential real-world applications, from automating data entry tasks to enhancing accessibility in digital document processing, the ability of an AI model to accurately recognize handwritten digits holds immense promise. Through the utilization of advanced algorithms and machine learning techniques, this project endeavors to unlock the potential of AI in transforming handwritten digit recognition into a seamless and efficient process.
 
 \newpage
 \section{Our goal - Pawel  [Done]}
@@ -67,8 +65,20 @@ Upon successful completion of our project, we anticipate achieving the following
 \end{itemize}
 
 \newpage
-\section{Decision boundary - Kacper}
-...
+\section{Decision Boundary - Kacper}
+
+The concept of a decision boundary is fundamental in understanding how a neural network makes predictions and categorizes inputs. In the context of our handwritten text symbol recognition project, the decision boundary plays a crucial role in distinguishing between different handwritten digits.
+
+\subsection{Definition}
+A decision boundary is a hypersurface that separates the input space into regions assigned to different classes. In our case, each region corresponds to a specific digit (0 through 9). The decision boundary is learned during the training phase of the neural network and is a reflection of the network's understanding of the features that differentiate one digit from another.
+
+\subsection{Adaptability}
+The adaptability of the decision boundary is a key aspect of the neural network's performance. A well-trained model should be capable of adjusting its decision boundary to accommodate variations in handwriting styles, ensuring robust recognition across different writing patterns.
+
+\subsection{Optimization Impact}
+During the optimization process, the neural network adjusts its parameters to optimize the decision boundary for accurate classification. Understanding the decision boundary dynamics sheds light on how changes in weights and biases impact the model's ability to discriminate between different digits.
+
+In the subsequent sections, we will delve into the weights and biases optimization process, shedding further light on how these adjustments influence the decision boundary and contribute to the overall performance of our handwritten text symbol recognition system.
 
 \newpage
 \section{Weights and Biases - Pawel  [Done]}
@@ -150,10 +160,6 @@ The derivative of the sigmoid function is used in the backpropagation algorithm 
 \end{figure}
 
 \newpage
-\section{Cost function - Kacper}
-...
-
-\newpage
 \section{Gradient descent and backpropagation - Pawel [Done]}
 \subsection{Gradients of the cost function}
 \textbf{Gradient Descent} - Is an optimization algorithm that is used to find the weights that minimize the cost function. 
@@ -227,8 +233,23 @@ They help improve prediction accuracy by reducing the output error in neural net
 \end{figure}
 
 \newpage
-\section{Cost landscape - Kacper}
-...
+\section{Cost Landscape - Kacper}
+
+Understanding the cost landscape is essential for comprehending the optimization process in neural networks. In our project of handwritten text symbol recognition, the cost landscape reflects the relationship between the model's parameters and the cost function, providing insights into the optimization journey.
+
+\subsection{Definition}
+The cost landscape, also known as the loss landscape, is a graphical representation of how the cost function varies with changes in the neural network's parameters, such as weights and biases. It visualizes the "landscape" of the optimization problem, showing areas of high and low cost values.
+
+\subsection{Characteristics}
+The cost landscape can exhibit various characteristics, including multiple local minima, saddle points, and plateaus. Local minima represent suboptimal solutions, while saddle points pose challenges to gradient-based optimization algorithms. Plateaus, on the other hand, indicate regions of slow convergence, where the optimization process may stagnate.
+
+\subsection{Impact on Optimization}
+Navigating the cost landscape effectively is crucial for optimizing the performance of the neural network. Understanding the topology of the landscape helps in selecting appropriate optimization algorithms, setting learning rates, and initializing parameters to avoid getting stuck in local minima or encountering convergence issues.
+
+\subsection{Optimization Strategies}
+Based on the insights gained from analyzing the cost landscape, various optimization strategies can be employed to navigate the landscape effectively. Techniques such as stochastic gradient descent, momentum optimization, and adaptive learning rates aim to mitigate the challenges posed by the landscape topology and accelerate convergence towards the global minimum.
+
+In the subsequent sections, we will explore the optimization strategies employed in our project and their impact on improving the performance of our handwritten text symbol recognition system.
 
 \newpage
 \section{Learning algorithm - naive approach, calculus approach, digit recognition - Kacper}
