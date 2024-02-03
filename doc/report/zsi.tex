@@ -1,14 +1,20 @@
 \documentclass{article}
 
+%\usepackage{cite} 
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{pgfplots}
 \usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{biblatex}
+\addbibresource{sources.bib}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
 
 \title{Text symbol classification using neural networks}
 \author{Kacper Ochnik \and Paweł Frankowski}
 \date{\today}
-
-\begin{document}
 
 \begin{titlepage}
 	\centering
@@ -166,7 +172,7 @@ The derivative of the sigmoid function is used in the backpropagation algorithm 
 \textbf{Gradient Descent} - Is an optimization algorithm that is used to find the weights that minimize the cost function. 
 We need two things to do so. Direction in which to navigate and the size of the steps for navigating.
 To know which direction to navigate the cost function, gradient descent uses backpropagation. More specifically, it uses the gradients calculated through backpropagation. These gradients are used for determining the direction to navigate to find the minimum point. Descresing slope will lead us to the minimum point.
-The cost gradients for weights and biases are initialized with zeros, and during training, these gradients will be updated based on the backpropagation algorithm.
+The cost gradients for weights and biases are initialized with zeros, and during training, these gradients will be updated based on the backpropagation algorithm \cite{algorithms} .
 
 \begin{figure}[ht]
     \centering 
@@ -212,7 +218,7 @@ The cost gradients for weights and biases are initialized with zeros, and during
 
 \newpage
 \subsection{Backpropagation}
-\textbf{Backpropagation} - is a training algorithm for feedforward neural networks that propagates the error backward from the output to the input layer.
+\textbf{Backpropagation} - is a training algorithm for feedforward neural networks \cite{ffn_wiki} that propagates the error backward from the output to the input layer.
 It plays a crucial role in gradient descent, a process of finding the minimum of the cost function. 
 Gradient descent relies on backpropagation to calculate gradients by moving backward in the neural network.
 Together, backpropagation and gradient descent is used for the purpose of improving the prediction accuracy of neural networks. 
@@ -268,5 +274,8 @@ Kacper you should check other sections because there could be duplicates!
 \newpage
 \section{Conclusion}
 This is the conclusion of the document.
+
+\newpage
+\printbibliography 
 
 \end{document}

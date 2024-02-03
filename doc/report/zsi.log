@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.30)  3 FEB 2024 11:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.30)  3 FEB 2024 18:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -23,6 +23,8 @@ File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
+) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
@@ -301,39 +303,288 @@ Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count289
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count290
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count291
+) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count292
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count293
+\c@listtotal=\count294
+\c@listcount=\count295
+\c@liststart=\count296
+\c@liststop=\count297
+\c@citecount=\count298
+\c@citetotal=\count299
+\c@multicitecount=\count300
+\c@multicitetotal=\count301
+\c@instcount=\count302
+\c@maxnames=\count303
+\c@minnames=\count304
+\c@maxitems=\count305
+\c@minitems=\count306
+\c@citecounter=\count307
+\c@maxcitecounter=\count308
+\c@savedcitecounter=\count309
+\c@uniquelist=\count310
+\c@uniquename=\count311
+\c@refsection=\count312
+\c@refsegment=\count313
+\c@maxextratitle=\count314
+\c@maxextratitleyear=\count315
+\c@maxextraname=\count316
+\c@maxextradate=\count317
+\c@maxextraalpha=\count318
+\c@abbrvpenalty=\count319
+\c@highnamepenalty=\count320
+\c@lownamepenalty=\count321
+\c@maxparens=\count322
+\c@parenlevel=\count323
+\blx@tempcnta=\count324
+\blx@tempcntb=\count325
+\blx@tempcntc=\count326
+\c@blx@maxsection=\count327
+\blx@maxsegment@0=\count328
+\blx@notetype=\count329
+\blx@parenlevel@text=\count330
+\blx@parenlevel@foot=\count331
+\blx@sectionciteorder@0=\count332
+\blx@sectionciteorderinternal@0=\count333
+\blx@entrysetcounter=\count334
+\blx@biblioinstance=\count335
+\labelnumberwidth=\skip50
+\labelalphawidth=\skip51
+\biblabelsep=\skip52
+\bibitemsep=\skip53
+\bibnamesep=\skip54
+\bibinitsep=\skip55
+\bibparsep=\skip56
+\bibhang=\skip57
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language79
+\c@mincomprange=\count336
+\c@maxcomprange=\count337
+\c@mincompwidth=\count338
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count339
+\c@savedafterword=\count340
+\c@annotator=\count341
+\c@savedannotator=\count342
+\c@author=\count343
+\c@savedauthor=\count344
+\c@bookauthor=\count345
+\c@savedbookauthor=\count346
+\c@commentator=\count347
+\c@savedcommentator=\count348
+\c@editor=\count349
+\c@savededitor=\count350
+\c@editora=\count351
+\c@savededitora=\count352
+\c@editorb=\count353
+\c@savededitorb=\count354
+\c@editorc=\count355
+\c@savededitorc=\count356
+\c@foreword=\count357
+\c@savedforeword=\count358
+\c@holder=\count359
+\c@savedholder=\count360
+\c@introduction=\count361
+\c@savedintroduction=\count362
+\c@namea=\count363
+\c@savednamea=\count364
+\c@nameb=\count365
+\c@savednameb=\count366
+\c@namec=\count367
+\c@savednamec=\count368
+\c@translator=\count369
+\c@savedtranslator=\count370
+\c@shortauthor=\count371
+\c@savedshortauthor=\count372
+\c@shorteditor=\count373
+\c@savedshorteditor=\count374
+\c@labelname=\count375
+\c@savedlabelname=\count376
+\c@institution=\count377
+\c@savedinstitution=\count378
+\c@lista=\count379
+\c@savedlista=\count380
+\c@listb=\count381
+\c@savedlistb=\count382
+\c@listc=\count383
+\c@savedlistc=\count384
+\c@listd=\count385
+\c@savedlistd=\count386
+\c@liste=\count387
+\c@savedliste=\count388
+\c@listf=\count389
+\c@savedlistf=\count390
+\c@location=\count391
+\c@savedlocation=\count392
+\c@organization=\count393
+\c@savedorganization=\count394
+\c@origlocation=\count395
+\c@savedoriglocation=\count396
+\c@origpublisher=\count397
+\c@savedorigpublisher=\count398
+\c@publisher=\count399
+\c@savedpublisher=\count400
+\c@language=\count401
+\c@savedlanguage=\count402
+\c@origlanguage=\count403
+\c@savedoriglanguage=\count404
+\c@pageref=\count405
+\c@savedpageref=\count406
+\shorthandwidth=\skip58
+\shortjournalwidth=\skip59
+\shortserieswidth=\skip60
+\shorttitlewidth=\skip61
+\shortauthorwidth=\skip62
+\shorteditorwidth=\skip63
+\locallabelnumberwidth=\skip64
+\locallabelalphawidth=\skip65
+\localshorthandwidth=\skip66
+\localshortjournalwidth=\skip67
+\localshortserieswidth=\skip68
+\localshorttitlewidth=\skip69
+\localshortauthorwidth=\skip70
+\localshorteditorwidth=\skip71
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count407
+\c@textcitetotal=\count408
+\c@textcitemaxnames=\count409
+\c@biburlbigbreakpenalty=\count410
+\c@biburlbreakpenalty=\count411
+\c@biburlnumpenalty=\count412
+\c@biburlucpenalty=\count413
+\c@biburllcpenalty=\count414
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count415
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count416
+\c@bbx:relatedtotal=\count417
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
+File: numeric.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2023-08-29 L3 programming layer (loader) 
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count291
+\l__color_backend_stack_int=\count418
 \l__pdf_internal_box=\box63
-) (zsi.aux)
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2023-08-29 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2023-08-29 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+))
+\@quotelevel=\count419
+\@quotereset=\count420
+ (zsi.aux)
 \openout1 = `zsi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
  (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count292
+\scratchcounter=\count421
 \scratchdimen=\dimen271
 \scratchbox=\box64
-\nofMPsegments=\count293
-\nofMParguments=\count294
+\nofMPsegments=\count422
+\nofMParguments=\count423
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count295
+\MPscratchCnt=\count424
 \MPscratchDim=\dimen272
-\MPnumerator=\count296
-\makeMPintoPDFobject=\count297
+\MPnumerator=\count425
+\makeMPintoPDFobject=\count426
 \everyMPtoPDFconversion=\toks38
 ) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -341,18 +592,31 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 11.
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `zsi.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'zsi.bbl' found.
+ (zsi.bbl)
+Package biblatex Info: Reference section=0 on input line 13.
+Package biblatex Info: Reference segment=0 on input line 13.
 <Logo_PK_kolor_EN_PNG.png, id=4, 55.407pt x 55.407pt>
 File: Logo_PK_kolor_EN_PNG.png Graphic file (type png)
 <use Logo_PK_kolor_EN_PNG.png>
-Package pdftex.def Info: Logo_PK_kolor_EN_PNG.png  used on input line 15.
+Package pdftex.def Info: Logo_PK_kolor_EN_PNG.png  used on input line 21.
 (pdftex.def)             Requested size: 103.50105pt x 103.50146pt.
-[1
+ [1
 
 {C:/Users/pawel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Logo_PK_kolor_EN_PNG.png>] (zsi.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -360,170 +624,177 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
 )
-\tf@toc=\write4
-\openout4 = `zsi.toc'.
+\tf@toc=\write5
+\openout5 = `zsi.toc'.
 
  [1] [2]
-Overfull \hbox (5.76387pt too wide) in paragraph at lines 55--56
-[]\OT1/cmr/bx/n/10 Documentation \OT1/cmr/m/n/10 - Write a com-pre-hen-sive re-port doc-u-ment-ing the project's
+Overfull \hbox (5.68439pt too wide) in paragraph at lines 61--62
+[]\T1/cmr/bx/n/10 Documentation \T1/cmr/m/n/10 - Write a com-pre-hen-sive re-port doc-u-ment-ing the project's
  []
 
 [3] [4]
-<images/Xavier-Glorot-initialization-for-weights.png, id=30, 823.57687pt x 170.13562pt>
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 94.
+ (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+<images/Xavier-Glorot-initialization-for-weights.png, id=33, 823.57687pt x 170.13562pt>
 File: images/Xavier-Glorot-initialization-for-weights.png Graphic file (type png)
 <use images/Xavier-Glorot-initialization-for-weights.png>
-Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 92.
+Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 98.
 (pdftex.def)             Requested size: 345.0pt x 71.26955pt.
-<images/dot-product-of-inputs-and-weights.png, id=31, 421.575pt x 106.89937pt>
+<images/dot-product-of-inputs-and-weights.png, id=34, 421.575pt x 106.89937pt>
 File: images/dot-product-of-inputs-and-weights.png Graphic file (type png)
 <use images/dot-product-of-inputs-and-weights.png>
-Package pdftex.def Info: images/dot-product-of-inputs-and-weights.png  used on input line 103.
+Package pdftex.def Info: images/dot-product-of-inputs-and-weights.png  used on input line 109.
 (pdftex.def)             Requested size: 345.0pt x 87.4835pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 106.
+(caption)                outside box or environment on input line 112.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 106.
+(caption)                outside box or environment on input line 112.
 See the caption package documentation for explanation.
 
 [5 <./images/Xavier-Glorot-initialization-for-weights.png>] [6 <./images/dot-product-of-inputs-and-weights.png>]
-<images/sigmoid-function.png, id=44, 225.84375pt x 87.32625pt>
+<images/sigmoid-function.png, id=47, 225.84375pt x 87.32625pt>
 File: images/sigmoid-function.png Graphic file (type png)
 <use images/sigmoid-function.png>
-Package pdftex.def Info: images/sigmoid-function.png  used on input line 143.
+Package pdftex.def Info: images/sigmoid-function.png  used on input line 149.
 (pdftex.def)             Requested size: 172.5pt x 66.70442pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 146.
+(caption)                outside box or environment on input line 152.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 146.
+(caption)                outside box or environment on input line 152.
 See the caption package documentation for explanation.
 
-<images/sigmoid-derivative.png, id=45, 277.78781pt x 73.02281pt>
+<images/sigmoid-derivative.png, id=48, 277.78781pt x 73.02281pt>
 File: images/sigmoid-derivative.png Graphic file (type png)
 <use images/sigmoid-derivative.png>
-Package pdftex.def Info: images/sigmoid-derivative.png  used on input line 158.
+Package pdftex.def Info: images/sigmoid-derivative.png  used on input line 164.
 (pdftex.def)             Requested size: 172.5pt x 45.34608pt.
 [7] [8 <./images/sigmoid-function.png> <./images/sigmoid-derivative.png>]
 File: images/Xavier-Glorot-initialization-for-weights.png Graphic file (type png)
 <use images/Xavier-Glorot-initialization-for-weights.png>
-Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 173.
+Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 179.
 (pdftex.def)             Requested size: 345.0pt x 71.26955pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 176.
+(caption)                outside box or environment on input line 182.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 176.
+(caption)                outside box or environment on input line 182.
 See the caption package documentation for explanation.
 
-<images/apply-gradients.png, id=61, 320.69812pt x 129.48375pt>
+<images/apply-gradients.png, id=65, 320.69812pt x 129.48375pt>
 File: images/apply-gradients.png Graphic file (type png)
 <use images/apply-gradients.png>
-Package pdftex.def Info: images/apply-gradients.png  used on input line 181.
+Package pdftex.def Info: images/apply-gradients.png  used on input line 187.
 (pdftex.def)             Requested size: 345.0pt x 139.29898pt.
-<images/layer-gradient.png, id=62, 398.23781pt x 119.69719pt>
+<images/layer-gradient.png, id=66, 398.23781pt x 119.69719pt>
 File: images/layer-gradient.png Graphic file (type png)
 <use images/layer-gradient.png>
-Package pdftex.def Info: images/layer-gradient.png  used on input line 188.
+Package pdftex.def Info: images/layer-gradient.png  used on input line 194.
 (pdftex.def)             Requested size: 345.0pt x 103.69917pt.
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 191.
+(caption)                outside box or environment on input line 197.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 191.
+(caption)                outside box or environment on input line 197.
 See the caption package documentation for explanation.
 
 [9 <./images/apply-gradients.png>]
-<images/data-load.png, id=67, 408.77719pt x 216.05719pt>
+<images/data-load.png, id=71, 408.77719pt x 216.05719pt>
 File: images/data-load.png Graphic file (type png)
 <use images/data-load.png>
-Package pdftex.def Info: images/data-load.png  used on input line 199.
+Package pdftex.def Info: images/data-load.png  used on input line 205.
 (pdftex.def)             Requested size: 345.0pt x 182.35713pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 202.
+(caption)                outside box or environment on input line 208.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 202.
+(caption)                outside box or environment on input line 208.
 See the caption package documentation for explanation.
 
-<images/main.png, id=68, 505.13719pt x 376.40625pt>
+<images/main.png, id=72, 505.13719pt x 376.40625pt>
 File: images/main.png Graphic file (type png)
 <use images/main.png>
-Package pdftex.def Info: images/main.png  used on input line 207.
+Package pdftex.def Info: images/main.png  used on input line 213.
 (pdftex.def)             Requested size: 345.0pt x 257.08432pt.
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 210.
+(caption)                outside box or environment on input line 216.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 210.
+(caption)                outside box or environment on input line 216.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 210.
+(Font)              <9> on input line 216.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 210.
+(Font)              <6> on input line 216.
 [10 <./images/layer-gradient.png>]
-<images/backpropagate.png, id=73, 734.745pt x 202.50656pt>
+<images/backpropagate.png, id=77, 734.745pt x 202.50656pt>
 File: images/backpropagate.png Graphic file (type png)
 <use images/backpropagate.png>
-Package pdftex.def Info: images/backpropagate.png  used on input line 223.
+Package pdftex.def Info: images/backpropagate.png  used on input line 229.
 (pdftex.def)             Requested size: 345.0pt x 95.08847pt.
-<images/calculate-gradients.png, id=74, 341.02406pt x 87.32625pt>
+<images/calculate-gradients.png, id=78, 341.02406pt x 87.32625pt>
 File: images/calculate-gradients.png Graphic file (type png)
 <use images/calculate-gradients.png>
-Package pdftex.def Info: images/calculate-gradients.png  used on input line 230.
+Package pdftex.def Info: images/calculate-gradients.png  used on input line 236.
 (pdftex.def)             Requested size: 345.0pt x 88.34938pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 233.
+(caption)                outside box or environment on input line 239.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 233.
+(caption)                outside box or environment on input line 239.
 See the caption package documentation for explanation.
 
-[11 <./images/data-load.png>] [12] [13] [14] [15] [16] [17 <./images/main.png>] [18 <./images/backpropagate.png> <./images/calculate-gradients.png>] (zsi.aux)
+[11 <./images/data-load.png>] [12] [13] [14] [15] [16] [17] [18 <./images/main.png>] [19 <./images/backpropagate.png> <./images/calculate-gradients.png>] (zsi.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
+Package logreq Info: Writing requests to 'zsi.run.xml'.
+\openout1 = `zsi.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 23773 strings out of 475248
- 633390 string characters out of 5757813
- 1934785 words of memory out of 5000000
- 44967 multiletter control sequences out of 15000+600000
- 563943 words of font info for 56 fonts, out of 8000000 for 9000
+ 32071 strings out of 475248
+ 795240 string characters out of 5757813
+ 1935785 words of memory out of 5000000
+ 53165 multiletter control sequences out of 15000+600000
+ 571288 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,18n,103p,1069b,2106s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on zsi.pdf (19 pages, 366871 bytes).
+ 99i,18n,103p,1069b,2115s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on zsi.pdf (20 pages, 372729 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
+ 630 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
