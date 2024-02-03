@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1706829812.13276 "d:/Studies/5sem/slowik-projekt/htsr-dnn/doc/report/zsi.tex" "zsi.pdf" "zsi" 1706829813.70461 0
+["pdflatex"] 1706955892.90779 "d:/Studies/5sem/slowik-projekt/htsr-dnn/doc/report/zsi.tex" "zsi.pdf" "zsi" 1706955894.4409 0
   "C:/Users/pawel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1706653941 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/pawel/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1706647061 11548 b05426ecb68189a2996640d6232a52e3 ""
   "C:/Users/pawel/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1706645821 24141908 cd9f47af2fa8753604342c87ae308ed2 ""
@@ -161,7 +161,7 @@
   "C:/Users/pawel/AppData/Local/Programs/MiKTeX/tex/latex/pgfplots/pgfplots.sty" 1621075461 4904 ee78b44e85d6fccf08cd99370557481e ""
   "C:/Users/pawel/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "Logo_PK_kolor_EN_PNG.png" 1698859611 23226 b9f922e03d8ed3086185ca1f11a5a674 ""
-  "d:/Studies/5sem/slowik-projekt/htsr-dnn/doc/report/zsi.tex" 1706829811 13062 8d517f0f58dc101307573bb110eef11c ""
+  "d:/Studies/5sem/slowik-projekt/htsr-dnn/doc/report/zsi.tex" 1706955892 17144 82369c239a08a6a259d5cd8476cd7514 ""
   "images/Xavier-Glorot-initialization-for-weights.png" 1706649328 25621 c1813e2d4527bf5d7e363761bed6ddd0 ""
   "images/apply-gradients.png" 1706722986 10960 3fa31c86538eaa9eeee75f5dbe8ba01f ""
   "images/backpropagate.png" 1706828912 32421 118de5b6890e83becfe7f22baff8ba4c ""
@@ -172,9 +172,9 @@
   "images/main.png" 1706823244 48051 3e11659fe9b2322f8b0eaef5c1d236be ""
   "images/sigmoid-derivative.png" 1706654342 5577 ced971f54092aa3799de4db0fea3d515 ""
   "images/sigmoid-function.png" 1706653608 6246 290f255026e3248720aa6597f2a60d01 ""
-  "zsi.aux" 1706829813 5197 612201e1c7d90ec32b0cc895c617073e "pdflatex"
-  "zsi.tex" 1706829811 13062 8d517f0f58dc101307573bb110eef11c ""
-  "zsi.toc" 1706829813 1691 8c08970d4b632671cf4af70d78d7bf7a "pdflatex"
+  "zsi.aux" 1706955894 5724 b7a1349d748d8ab88e2b98e3b27e13d9 "pdflatex"
+  "zsi.tex" 1706955892 17144 82369c239a08a6a259d5cd8476cd7514 ""
+  "zsi.toc" 1706955894 1976 59cf0262866438f8f45b99a2fc124191 "pdflatex"
   (generated)
   "zsi.aux"
   "zsi.log"
