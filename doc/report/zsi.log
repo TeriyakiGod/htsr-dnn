@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.30)  3 FEB 2024 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.30)  3 FEB 2024 18:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -559,20 +559,20 @@ Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
  (zsi.aux)
 \openout1 = `zsi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
  (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count421
@@ -609,12 +609,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'zsi.bbl' found.
  (zsi.bbl)
-Package biblatex Info: Reference section=0 on input line 13.
-Package biblatex Info: Reference segment=0 on input line 13.
+Package biblatex Info: Reference section=0 on input line 12.
+Package biblatex Info: Reference segment=0 on input line 12.
 <Logo_PK_kolor_EN_PNG.png, id=4, 55.407pt x 55.407pt>
 File: Logo_PK_kolor_EN_PNG.png Graphic file (type png)
 <use Logo_PK_kolor_EN_PNG.png>
-Package pdftex.def Info: Logo_PK_kolor_EN_PNG.png  used on input line 21.
+Package pdftex.def Info: Logo_PK_kolor_EN_PNG.png  used on input line 20.
 (pdftex.def)             Requested size: 103.50105pt x 103.50146pt.
  [1
 
@@ -628,150 +628,150 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout5 = `zsi.toc'.
 
  [1] [2]
-Overfull \hbox (5.68439pt too wide) in paragraph at lines 61--62
+Overfull \hbox (5.68439pt too wide) in paragraph at lines 60--61
 []\T1/cmr/bx/n/10 Documentation \T1/cmr/m/n/10 - Write a com-pre-hen-sive re-port doc-u-ment-ing the project's
  []
 
 [3] [4]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 94.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 93.
  (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 <images/Xavier-Glorot-initialization-for-weights.png, id=33, 823.57687pt x 170.13562pt>
 File: images/Xavier-Glorot-initialization-for-weights.png Graphic file (type png)
 <use images/Xavier-Glorot-initialization-for-weights.png>
-Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 98.
+Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 97.
 (pdftex.def)             Requested size: 345.0pt x 71.26955pt.
 <images/dot-product-of-inputs-and-weights.png, id=34, 421.575pt x 106.89937pt>
 File: images/dot-product-of-inputs-and-weights.png Graphic file (type png)
 <use images/dot-product-of-inputs-and-weights.png>
-Package pdftex.def Info: images/dot-product-of-inputs-and-weights.png  used on input line 109.
+Package pdftex.def Info: images/dot-product-of-inputs-and-weights.png  used on input line 108.
 (pdftex.def)             Requested size: 345.0pt x 87.4835pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 112.
+(caption)                outside box or environment on input line 111.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 112.
+(caption)                outside box or environment on input line 111.
 See the caption package documentation for explanation.
 
 [5 <./images/Xavier-Glorot-initialization-for-weights.png>] [6 <./images/dot-product-of-inputs-and-weights.png>]
 <images/sigmoid-function.png, id=47, 225.84375pt x 87.32625pt>
 File: images/sigmoid-function.png Graphic file (type png)
 <use images/sigmoid-function.png>
-Package pdftex.def Info: images/sigmoid-function.png  used on input line 149.
+Package pdftex.def Info: images/sigmoid-function.png  used on input line 148.
 (pdftex.def)             Requested size: 172.5pt x 66.70442pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 152.
+(caption)                outside box or environment on input line 151.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 152.
+(caption)                outside box or environment on input line 151.
 See the caption package documentation for explanation.
 
 <images/sigmoid-derivative.png, id=48, 277.78781pt x 73.02281pt>
 File: images/sigmoid-derivative.png Graphic file (type png)
 <use images/sigmoid-derivative.png>
-Package pdftex.def Info: images/sigmoid-derivative.png  used on input line 164.
+Package pdftex.def Info: images/sigmoid-derivative.png  used on input line 163.
 (pdftex.def)             Requested size: 172.5pt x 45.34608pt.
 [7] [8 <./images/sigmoid-function.png> <./images/sigmoid-derivative.png>]
 File: images/Xavier-Glorot-initialization-for-weights.png Graphic file (type png)
 <use images/Xavier-Glorot-initialization-for-weights.png>
-Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 179.
+Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 178.
 (pdftex.def)             Requested size: 345.0pt x 71.26955pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 182.
+(caption)                outside box or environment on input line 181.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 182.
+(caption)                outside box or environment on input line 181.
 See the caption package documentation for explanation.
 
 <images/apply-gradients.png, id=65, 320.69812pt x 129.48375pt>
 File: images/apply-gradients.png Graphic file (type png)
 <use images/apply-gradients.png>
-Package pdftex.def Info: images/apply-gradients.png  used on input line 187.
+Package pdftex.def Info: images/apply-gradients.png  used on input line 186.
 (pdftex.def)             Requested size: 345.0pt x 139.29898pt.
 <images/layer-gradient.png, id=66, 398.23781pt x 119.69719pt>
 File: images/layer-gradient.png Graphic file (type png)
 <use images/layer-gradient.png>
-Package pdftex.def Info: images/layer-gradient.png  used on input line 194.
+Package pdftex.def Info: images/layer-gradient.png  used on input line 193.
 (pdftex.def)             Requested size: 345.0pt x 103.69917pt.
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 197.
+(caption)                outside box or environment on input line 196.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 197.
+(caption)                outside box or environment on input line 196.
 See the caption package documentation for explanation.
 
 [9 <./images/apply-gradients.png>]
 <images/data-load.png, id=71, 408.77719pt x 216.05719pt>
 File: images/data-load.png Graphic file (type png)
 <use images/data-load.png>
-Package pdftex.def Info: images/data-load.png  used on input line 205.
+Package pdftex.def Info: images/data-load.png  used on input line 204.
 (pdftex.def)             Requested size: 345.0pt x 182.35713pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 208.
+(caption)                outside box or environment on input line 207.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 208.
+(caption)                outside box or environment on input line 207.
 See the caption package documentation for explanation.
 
 <images/main.png, id=72, 505.13719pt x 376.40625pt>
 File: images/main.png Graphic file (type png)
 <use images/main.png>
-Package pdftex.def Info: images/main.png  used on input line 213.
+Package pdftex.def Info: images/main.png  used on input line 212.
 (pdftex.def)             Requested size: 345.0pt x 257.08432pt.
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 216.
+(caption)                outside box or environment on input line 215.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 216.
+(caption)                outside box or environment on input line 215.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 216.
+(Font)              <9> on input line 215.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 216.
+(Font)              <6> on input line 215.
 [10 <./images/layer-gradient.png>]
 <images/backpropagate.png, id=77, 734.745pt x 202.50656pt>
 File: images/backpropagate.png Graphic file (type png)
 <use images/backpropagate.png>
-Package pdftex.def Info: images/backpropagate.png  used on input line 229.
+Package pdftex.def Info: images/backpropagate.png  used on input line 228.
 (pdftex.def)             Requested size: 345.0pt x 95.08847pt.
 <images/calculate-gradients.png, id=78, 341.02406pt x 87.32625pt>
 File: images/calculate-gradients.png Graphic file (type png)
 <use images/calculate-gradients.png>
-Package pdftex.def Info: images/calculate-gradients.png  used on input line 236.
+Package pdftex.def Info: images/calculate-gradients.png  used on input line 235.
 (pdftex.def)             Requested size: 345.0pt x 88.34938pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 239.
+(caption)                outside box or environment on input line 238.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 239.
+(caption)                outside box or environment on input line 238.
 See the caption package documentation for explanation.
 
 [11 <./images/data-load.png>] [12] [13] [14] [15] [16] [17] [18 <./images/main.png>] [19 <./images/backpropagate.png> <./images/calculate-gradients.png>] (zsi.aux)

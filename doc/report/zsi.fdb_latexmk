@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber zsi"] 1706980378.39105 "zsi.bcf" "zsi.bbl" "zsi" 1706980396.66437 0
+["biber zsi"] 1706980378.39105 "zsi.bcf" "zsi.bbl" "zsi" 1706980522.90001 0
   "sources.bib" 1706980323 556 43b27798376fe380c0fce6266d66fc37 ""
-  "zsi.bcf" 1706980396 107826 04cdf6559f25f28c36f4237bd0822837 "pdflatex"
+  "zsi.bcf" 1706980522 107826 04cdf6559f25f28c36f4237bd0822837 "pdflatex"
   (generated)
   "zsi.bbl"
   "zsi.blg"
   (rewritten before read)
-["pdflatex"] 1706980394.63997 "d:/Studies/5sem/slowik-projekt/htsr-dnn/doc/report/zsi.tex" "zsi.pdf" "zsi" 1706980396.66513 0
+["pdflatex"] 1706980520.67124 "d:/Studies/5sem/slowik-projekt/htsr-dnn/doc/report/zsi.tex" "zsi.pdf" "zsi" 1706980522.90112 0
   "C:/Users/pawel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1706978699 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/pawel/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0900.pk" 1706978573 22504 e0c509345b31dc7400924d4965f14dc0 ""
   "C:/Users/pawel/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1706978500 25420 3b43b8aa4b42cdcdd0f03d3ee9bf6b93 ""
@@ -205,7 +205,7 @@
   "C:/Users/pawel/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pawel/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "Logo_PK_kolor_EN_PNG.png" 1698859611 23226 b9f922e03d8ed3086185ca1f11a5a674 ""
-  "d:/Studies/5sem/slowik-projekt/htsr-dnn/doc/report/zsi.tex" 1706980391 17362 1a3bd97bff82a57215bc6fb8e033c566 ""
+  "d:/Studies/5sem/slowik-projekt/htsr-dnn/doc/report/zsi.tex" 1706980519 17341 7be964a88bac0e6c56ee62d910e16612 ""
   "images/Xavier-Glorot-initialization-for-weights.png" 1706649328 25621 c1813e2d4527bf5d7e363761bed6ddd0 ""
   "images/apply-gradients.png" 1706722986 10960 3fa31c86538eaa9eeee75f5dbe8ba01f ""
   "images/backpropagate.png" 1706828912 32421 118de5b6890e83becfe7f22baff8ba4c ""
@@ -216,11 +216,11 @@
   "images/main.png" 1706823244 48051 3e11659fe9b2322f8b0eaef5c1d236be ""
   "images/sigmoid-derivative.png" 1706654342 5577 ced971f54092aa3799de4db0fea3d515 ""
   "images/sigmoid-function.png" 1706653608 6246 290f255026e3248720aa6597f2a60d01 ""
-  "zsi.aux" 1706980396 6087 a1194774d9a3ed1eb885a504dcceb295 "pdflatex"
+  "zsi.aux" 1706980522 6087 a1194774d9a3ed1eb885a504dcceb295 "pdflatex"
   "zsi.bbl" 1706980380 2794 8994fcc75d86fd218ef1a3ff44d4d2be "biber zsi"
-  "zsi.run.xml" 1706980396 2295 96dc752f168a65d2d065a75cc598b456 "pdflatex"
-  "zsi.tex" 1706980391 17362 1a3bd97bff82a57215bc6fb8e033c566 ""
-  "zsi.toc" 1706980396 1976 59cf0262866438f8f45b99a2fc124191 "pdflatex"
+  "zsi.run.xml" 1706980522 2295 96dc752f168a65d2d065a75cc598b456 "pdflatex"
+  "zsi.tex" 1706980519 17341 7be964a88bac0e6c56ee62d910e16612 ""
+  "zsi.toc" 1706980522 1976 59cf0262866438f8f45b99a2fc124191 "pdflatex"
   (generated)
   "zsi.aux"
   "zsi.bcf"
