@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.30)  3 FEB 2024 18:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.30)  6 FEB 2024 20:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -662,116 +662,116 @@ See the caption package documentation for explanation.
 <images/sigmoid-function.png, id=47, 225.84375pt x 87.32625pt>
 File: images/sigmoid-function.png Graphic file (type png)
 <use images/sigmoid-function.png>
-Package pdftex.def Info: images/sigmoid-function.png  used on input line 148.
+Package pdftex.def Info: images/sigmoid-function.png  used on input line 149.
 (pdftex.def)             Requested size: 172.5pt x 66.70442pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 151.
+(caption)                outside box or environment on input line 152.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 151.
+(caption)                outside box or environment on input line 152.
 See the caption package documentation for explanation.
 
 <images/sigmoid-derivative.png, id=48, 277.78781pt x 73.02281pt>
 File: images/sigmoid-derivative.png Graphic file (type png)
 <use images/sigmoid-derivative.png>
-Package pdftex.def Info: images/sigmoid-derivative.png  used on input line 163.
+Package pdftex.def Info: images/sigmoid-derivative.png  used on input line 164.
 (pdftex.def)             Requested size: 172.5pt x 45.34608pt.
 [7] [8 <./images/sigmoid-function.png> <./images/sigmoid-derivative.png>]
 File: images/Xavier-Glorot-initialization-for-weights.png Graphic file (type png)
 <use images/Xavier-Glorot-initialization-for-weights.png>
-Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 178.
+Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 179.
 (pdftex.def)             Requested size: 345.0pt x 71.26955pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 181.
+(caption)                outside box or environment on input line 182.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 181.
+(caption)                outside box or environment on input line 182.
 See the caption package documentation for explanation.
 
 <images/apply-gradients.png, id=65, 320.69812pt x 129.48375pt>
 File: images/apply-gradients.png Graphic file (type png)
 <use images/apply-gradients.png>
-Package pdftex.def Info: images/apply-gradients.png  used on input line 186.
+Package pdftex.def Info: images/apply-gradients.png  used on input line 187.
 (pdftex.def)             Requested size: 345.0pt x 139.29898pt.
 <images/layer-gradient.png, id=66, 398.23781pt x 119.69719pt>
 File: images/layer-gradient.png Graphic file (type png)
 <use images/layer-gradient.png>
-Package pdftex.def Info: images/layer-gradient.png  used on input line 193.
+Package pdftex.def Info: images/layer-gradient.png  used on input line 194.
 (pdftex.def)             Requested size: 345.0pt x 103.69917pt.
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 196.
+(caption)                outside box or environment on input line 197.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 196.
+(caption)                outside box or environment on input line 197.
 See the caption package documentation for explanation.
 
 [9 <./images/apply-gradients.png>]
 <images/data-load.png, id=71, 408.77719pt x 216.05719pt>
 File: images/data-load.png Graphic file (type png)
 <use images/data-load.png>
-Package pdftex.def Info: images/data-load.png  used on input line 204.
+Package pdftex.def Info: images/data-load.png  used on input line 205.
 (pdftex.def)             Requested size: 345.0pt x 182.35713pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 207.
+(caption)                outside box or environment on input line 208.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 207.
+(caption)                outside box or environment on input line 208.
 See the caption package documentation for explanation.
 
 <images/main.png, id=72, 505.13719pt x 376.40625pt>
 File: images/main.png Graphic file (type png)
 <use images/main.png>
-Package pdftex.def Info: images/main.png  used on input line 212.
+Package pdftex.def Info: images/main.png  used on input line 213.
 (pdftex.def)             Requested size: 345.0pt x 257.08432pt.
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 215.
+(caption)                outside box or environment on input line 216.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 215.
+(caption)                outside box or environment on input line 216.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 215.
+(Font)              <9> on input line 216.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 215.
+(Font)              <6> on input line 216.
 [10 <./images/layer-gradient.png>]
 <images/backpropagate.png, id=77, 734.745pt x 202.50656pt>
 File: images/backpropagate.png Graphic file (type png)
 <use images/backpropagate.png>
-Package pdftex.def Info: images/backpropagate.png  used on input line 228.
+Package pdftex.def Info: images/backpropagate.png  used on input line 229.
 (pdftex.def)             Requested size: 345.0pt x 95.08847pt.
 <images/calculate-gradients.png, id=78, 341.02406pt x 87.32625pt>
 File: images/calculate-gradients.png Graphic file (type png)
 <use images/calculate-gradients.png>
-Package pdftex.def Info: images/calculate-gradients.png  used on input line 235.
+Package pdftex.def Info: images/calculate-gradients.png  used on input line 236.
 (pdftex.def)             Requested size: 345.0pt x 88.34938pt.
 
 
 Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 238.
+(caption)                outside box or environment on input line 239.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 238.
+(caption)                outside box or environment on input line 239.
 See the caption package documentation for explanation.
 
 [11 <./images/data-load.png>] [12] [13] [14] [15] [16] [17] [18 <./images/main.png>] [19 <./images/backpropagate.png> <./images/calculate-gradients.png>] (zsi.aux)
@@ -792,7 +792,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,18n,103p,1069b,2115s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on zsi.pdf (20 pages, 372729 bytes).
+Output written on zsi.pdf (20 pages, 375210 bytes).
 PDF statistics:
  630 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

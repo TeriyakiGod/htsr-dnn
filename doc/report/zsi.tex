@@ -112,8 +112,9 @@ In the \texttt{Layer} class, the calculation of outputs begins with the computat
 \end{figure}
 
 \newpage
-\section{Hidden layers}
-Proponuje zaminic ten rozdzial na "FFN" (Feedforward Neural Network) i opisac tam jak dziala siec neuronowa, a w tym rozdziale opisac jak wyglada nasz model AI.
+\section{Our model}
+FFN - Feedforward Neural Network
+opisac w tym rozdziale opisac jak wyglada nasz model AI.
 ...
 
 \newpage
@@ -263,11 +264,31 @@ Kacper you should check other sections because there could be duplicates!
 ...
 
 \newpage
-\section{Chain rule}
-...
+\section{Chain Rule}
+
+The chain rule is a fundamental concept in calculus that describes how to compute the derivative of a composite function. In the context of neural networks, the chain rule plays a crucial role in the backpropagation algorithm, allowing us to efficiently calculate the gradients of the loss function with respect to the network's parameters.
+
+\subsection{Definition}
+
+The chain rule states that if \( f \) and \( g \) are differentiable functions, then the derivative of their composition \( f(g(x)) \) with respect to \( x \) is given by:
+
+\[
+(f \circ g)'(x) = f'(g(x)) \cdot g'(x)
+\]
+
+In the context of neural networks, this means that to compute the gradient of the loss function with respect to the weights and biases of a particular layer, we need to multiply the gradient of the loss function with respect to the output of that layer by the gradient of the output of that layer with respect to its inputs.
+
+\subsection{Application in Backpropagation}
+
+During the backpropagation process, the chain rule is applied recursively to propagate gradients backward through the network. Starting from the output layer and moving backward through each layer, the chain rule is used to compute the gradients of the loss function with respect to the activations of each layer. These gradients are then used to update the weights and biases of the network using an optimization algorithm such as stochastic gradient descent.
+
+\subsection{Examples from our code}
+... Dokoncz Kacper ...\\
+In summary, the chain rule is a powerful tool that enables us to efficiently compute gradients in neural networks, facilitating the training process and allowing networks to learn complex relationships in data.
 
 \newpage
 \section{Testing the network}
+napisz kilka slow o GUI, screeny wrzuc z tego
 ...
 
 \newpage
