@@ -1,16 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.30)  6 FEB 2024 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.24)  7 FEB 2024 13:40
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Studies/5sem/slowik-projekt/htsr-dnn/doc/report/zsi.tex
-(d:/Studies/5sem/slowik-projekt/htsr-dnn/doc/report/zsi.tex
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-29>
-(C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+**zsi.tex
+(./zsi.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-01-16>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -23,45 +22,66 @@ File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplots.sty
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks18
+
+(/home/teriyakigod/texmf/tex/latex/base/tex/latex/frontendlayer/tikz.sty
+(/home/teriyakigod/texmf/tex/latex/base/tex/latex/basiclayer/pgf.sty
+(/home/teriyakigod/texmf/tex/latex/base/tex/latex/utilities/pgfrcs.sty
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks17
 \pgfutil@tempdima=\dimen143
 \pgfutil@tempdimb=\dimen144
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/utilities/pgfutil-latex.def
 \pgfutil@abb=\box51
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+) (/home/teriyakigod/texmf/tex/latex/base/tex/generic/utilities/pgfrcs.code.tex
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+
+(/home/teriyakigod/texmf/tex/latex/base/tex/latex/basiclayer/pgfcore.sty
+(/home/teriyakigod/texmf/tex/latex/base/tex/latex/systemlayer/pgfsys.sty
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks19
-\pgfkeys@temptoks=\toks20
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks21
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks18
+\pgfkeys@temptoks=\toks19
+
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/utilities/pgfkeyslibraryfil
+tered.code.tex
+\pgfkeys@tmptoks=\toks20
 ))
 \pgf@x=\dimen145
 \pgf@y=\dimen146
@@ -79,31 +99,40 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \c@pgf@countb=\count194
 \c@pgf@countc=\count195
 \c@pgf@countd=\count196
-\t@pgf@toka=\toks22
-\t@pgf@tokb=\toks23
-\t@pgf@tokc=\toks24
+\t@pgf@toka=\toks21
+\t@pgf@tokb=\toks22
+\t@pgf@tokc=\toks23
 \pgf@sys@id@count=\count197
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/systemlayer/pgfsys-pdftex.d
+ef
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/systemlayer/pgfsys-common-p
+df.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-))) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+)))
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/systemlayer/pgfsyssoftpath.
+code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count198
 \pgfsyssoftpath@bigbuffer@items=\count199
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(/home/teriyakigod/texmf/tex/latex/base/doc/color.cfg)
 Package xcolor Info: Driver file: pdftex.def on input line 227.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -113,18 +142,43 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmath.code.tex
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathutil.code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen155
 \pgfmath@count=\count266
 \pgfmath@box=\box52
-\pgfmath@toks=\toks25
-\pgfmath@stack@operand=\toks26
-\pgfmath@stack@operation=\toks27
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\pgfmath@toks=\toks24
+\pgfmath@stack@operand=\toks25
+\pgfmath@stack@operation=\toks26
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathfunctions.code.
+tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathfunctions.basic
+.code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathfunctions.rando
+m.code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathfunctions.compa
+rison.code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathfunctions.base.
+code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathfunctions.round
+.code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathfunctions.misc.
+code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathcalc.code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count267
-)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+)) (/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfint.code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcorepoints.co
+de.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen156
 \pgf@picmaxx=\dimen157
@@ -140,75 +194,125 @@ File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yy=\dimen167
 \pgf@zx=\dimen168
 \pgf@zy=\dimen169
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcorepathconst
+ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@path@lastx=\dimen170
 \pgf@path@lasty=\dimen171
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcorepathusage
+.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@end@additional=\dimen172
 \pgf@shorten@start@additional=\dimen173
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcorescopes.co
+de.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box53
 \pgf@hbox=\box54
 \pgf@layerbox@main=\box55
 \pgf@picture@serial@count=\count268
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcoregraphicst
+ate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen174
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcoretransform
+ations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@pt@x=\dimen175
 \pgf@pt@y=\dimen176
 \pgf@pt@temp=\dimen177
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcorequick.cod
+e.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcoreobjects.c
+ode.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcorepathproce
+ssing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcorearrows.co
+de.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowsep=\dimen178
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcoreshade.cod
+e.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen179
 \pgf@sys@shading@range@num=\count269
 \pgf@shadingcount=\count270
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcoreimage.cod
+e.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcoreexternal.
+code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box56
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcorelayers.co
+de.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcoretranspare
+ncy.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcorepatterns.
+code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/basiclayer/pgfcorerdf.code.
+tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+)))
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/modules/pgfmoduleshapes.cod
+e.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box57
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/modules/pgfmoduleplot.code.
+tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/latex/compatibility/pgfcomp-version
+-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 \pgf@nodesepstart=\dimen180
 \pgf@nodesepend=\dimen181
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/latex/compatibility/pgfcomp-version
+-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+))
+(/home/teriyakigod/texmf/tex/latex/base/tex/latex/utilities/pgffor.sty
+(/home/teriyakigod/texmf/tex/latex/base/tex/latex/utilities/pgfkeys.sty
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/utilities/pgfkeys.code.tex)
+) (/home/teriyakigod/texmf/tex/latex/base/tex/latex/math/pgfmath.sty
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/math/pgfmath.code.tex))
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen182
 \pgffor@skip=\dimen183
-\pgffor@stack=\toks28
-\pgffor@toks=\toks29
-)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+\pgffor@stack=\toks27
+\pgffor@toks=\toks28
+))
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/frontendlayer/tikz/tikz.cod
+e.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/libraries/pgflibraryplothan
+dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count271
 \pgfplotmarksize=\dimen184
@@ -229,35 +333,81 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikznumberofchildren=\count273
 \tikznumberofcurrentchild=\count274
 \tikz@fig@count=\count275
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/modules/pgfmodulematrix.cod
+e.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfmatrixcurrentrow=\count276
 \pgfmatrixcurrentcolumn=\count277
 \pgf@matrix@numberofcolumns=\count278
 )
 \tikz@expandcount=\count279
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
-\t@pgfplots@toka=\toks30
-\t@pgfplots@tokb=\toks31
-\t@pgfplots@tokc=\toks32
+)))
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplots.code.tex
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks29
+\t@pgfplots@tokb=\toks30
+\t@pgfplots@tokc=\toks31
 \pgfplots@tmpa=\dimen193
 \c@pgfplots@coordindex=\count280
 \c@pgfplots@scanlineindex=\count281
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
+
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotssysgeneric.code.tex))
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotslibrary.code.tex)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsoldpgfsupp_loader.code.
+tex
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/libraries/pgflibraryfpu.cod
+e.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks33
-\t@pgf@tokb=\toks34
-\t@pgf@tokc=\toks35
-(C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsoldpgfsupp_pgfutil-comm
+on-lists.tex))
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsutil.code.tex
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsliststructure.code.tex)
+
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsliststructureext.code.t
+ex) (/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsarray.code.tex
 \c@pgfplotsarray@tmp=\count282
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsmatrix.code.tex)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotstableshared.code.tex
 \c@pgfplotstable@counta=\count283
-\t@pgfplotstable@a=\toks36
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\t@pgfplotstable@a=\toks35
+)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsdeque.code.tex)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsbinary.code.tex
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsbinary.data.code.tex))
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsutil.verb.code.tex)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgflibrarypgfplots.surfshading.
+code.tex
 \c@pgfplotslibrarysurf@no=\count284
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgflibrarypgfplots.surfshading.
+pgfsys-pdftex.def)))
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotscolormap.code.tex
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotscolor.code.tex))
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsstackedplots.code.tex)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsplothandlers.code.tex
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsmeshplothandler.code.te
+x
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsmeshplotimage.code.tex)
+)) (/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplots.scaling.code.tex)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotscoordprocessing.code.te
+x) (/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplots.errorbars.code.tex)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplots.markers.code.tex)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplotsticks.code.tex)
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/pgfplots.paths.code.tex)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/modules/pgfmoduledecoration
+s.code.tex
 \pgfdecoratedcompleteddistance=\dimen194
 \pgfdecoratedremainingdistance=\dimen195
 \pgfdecoratedinputsegmentcompleteddistance=\dimen196
@@ -268,7 +418,17 @@ Package pgfplots: loading complementary utilities for your pgf version...
 \pgfdecorationsegmentlength=\dimen256
 )
 \tikz@lib@dec@box=\box62
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+(/home/teriyakigod/texmf/tex/latex/pgfplots/tex/tikzlibrarypgfplots.contourlua.
+code.tex)
 \pgfplots@numplots=\count286
 \pgfplots@xmin@reg=\dimen257
 \pgfplots@xmax@reg=\dimen258
@@ -276,16 +436,22 @@ Package pgfplots: loading complementary utilities for your pgf version...
 \pgfplots@ymax@reg=\dimen260
 \pgfplots@zmin@reg=\dimen261
 \pgfplots@zmax@reg=\dimen262
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+)
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+
+(/home/teriyakigod/texmf/tex/latex/base/tex/generic/libraries/pgflibraryplotmar
+ks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
-Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+))) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
 \caption@tempdima=\dimen263
 \captionmargin=\dimen264
 \caption@leftmargin=\dimen265
@@ -299,39 +465,50 @@ Package caption Info: Standard document class detected.
 \c@caption@flags=\count287
 \c@continuedfloat=\count288
 )
-Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count289
-Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count290
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+)
+(/home/teriyakigod/texmf/tex/latex/biblatex/latex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count291
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+))
+(/home/teriyakigod/texmf/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count292
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+
+(/home/teriyakigod/texmf/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -388,13 +565,14 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip57
 \blx@bcfin=\read3
 \blx@bcfout=\write4
-\blx@langwohyphens=\language79
+\blx@langwohyphens=\language4
 \c@mincomprange=\count336
 \c@maxcomprange=\count337
 \c@mincompwidth=\count338
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+
+(/home/teriyakigod/texmf/tex/latex/biblatex/latex/blx-dm.def
 File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -483,12 +661,14 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip71
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+
+(/home/teriyakigod/texmf/tex/latex/biblatex/latex/blx-compat.def
 File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+
+(/home/teriyakigod/texmf/tex/latex/biblatex/latex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 \c@textcitecount=\count407
 \c@textcitetotal=\count408
@@ -506,18 +686,21 @@ File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+
+(/home/teriyakigod/texmf/tex/latex/biblatex/latex/bbx/numeric.bbx
 File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+
+(/home/teriyakigod/texmf/tex/latex/biblatex/latex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count416
 \c@bbx:relatedtotal=\count417
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
+
+(/home/teriyakigod/texmf/tex/latex/biblatex/latex/cbx/numeric.cbx
 File: numeric.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -533,72 +716,82 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+
+(/home/teriyakigod/texmf/tex/latex/biblatex/latex/biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2023-08-29 L3 programming layer (loader) 
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-01-16 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count418
 \l__pdf_internal_box=\box63
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2023-08-29 L3 programming layer (loader) 
+(biblatex)             2023-01-16 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
-Package: xparse 2023-08-29 L3 Experimental document command parser
+
+(/home/teriyakigod/texmf/tex/latex/biblatex/latex/blx-case-expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-01-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
 \@quotelevel=\count419
 \@quotereset=\count420
- (zsi.aux)
+
+(./zsi.aux)
 \openout1 = `zsi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count421
 \scratchdimen=\dimen271
 \scratchbox=\box64
 \nofMPsegments=\count422
 \nofMParguments=\count423
-\everyMPshowfont=\toks37
+\everyMPshowfont=\toks36
 \MPscratchCnt=\count424
 \MPscratchDim=\dimen272
 \MPnumerator=\count425
 \makeMPintoPDFobject=\count426
-\everyMPtoPDFconversion=\toks38
-) (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+\everyMPtoPDFconversion=\toks37
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
-Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+(/home/teriyakigod/texmf/tex/latex/biblatex/latex/lbx/english.lbx
 File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -608,17 +801,19 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'zsi.bbl' found.
- (zsi.bbl)
-Package biblatex Info: Reference section=0 on input line 12.
-Package biblatex Info: Reference segment=0 on input line 12.
+ (./zsi.bbl)
+Package biblatex Info: Reference section=0 on input line 11.
+Package biblatex Info: Reference segment=0 on input line 11.
 <Logo_PK_kolor_EN_PNG.png, id=4, 55.407pt x 55.407pt>
 File: Logo_PK_kolor_EN_PNG.png Graphic file (type png)
 <use Logo_PK_kolor_EN_PNG.png>
-Package pdftex.def Info: Logo_PK_kolor_EN_PNG.png  used on input line 20.
+Package pdftex.def Info: Logo_PK_kolor_EN_PNG.png  used on input line 19.
 (pdftex.def)             Requested size: 103.50105pt x 103.50146pt.
- [1
 
-{C:/Users/pawel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Logo_PK_kolor_EN_PNG.png>] (zsi.toc
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Logo_PK_kolor_EN_PNG.png
+>] (./zsi.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -628,173 +823,267 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout5 = `zsi.toc'.
 
  [1] [2]
-Overfull \hbox (5.68439pt too wide) in paragraph at lines 60--61
-[]\T1/cmr/bx/n/10 Documentation \T1/cmr/m/n/10 - Write a com-pre-hen-sive re-port doc-u-ment-ing the project's
+Overfull \hbox (5.68439pt too wide) in paragraph at lines 59--60
+[]\T1/cmr/bx/n/10 Documentation \T1/cmr/m/n/10 - Write a com-pre-hen-sive re-po
+rt doc-u-ment-ing the project's
  []
 
 [3] [4]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 93.
- (C:\Users\pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
+2.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-<images/Xavier-Glorot-initialization-for-weights.png, id=33, 823.57687pt x 170.13562pt>
-File: images/Xavier-Glorot-initialization-for-weights.png Graphic file (type png)
+<images/Xavier-Glorot-initialization-for-weights.png, id=34, 823.57687pt x 170.
+13562pt>
+File: images/Xavier-Glorot-initialization-for-weights.png Graphic file (type pn
+g)
 <use images/Xavier-Glorot-initialization-for-weights.png>
-Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 97.
+Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  u
+sed on input line 96.
 (pdftex.def)             Requested size: 345.0pt x 71.26955pt.
-<images/dot-product-of-inputs-and-weights.png, id=34, 421.575pt x 106.89937pt>
+<images/dot-product-of-inputs-and-weights.png, id=35, 421.575pt x 106.89937pt>
 File: images/dot-product-of-inputs-and-weights.png Graphic file (type png)
 <use images/dot-product-of-inputs-and-weights.png>
-Package pdftex.def Info: images/dot-product-of-inputs-and-weights.png  used on input line 108.
+Package pdftex.def Info: images/dot-product-of-inputs-and-weights.png  used on 
+input line 107.
 (pdftex.def)             Requested size: 345.0pt x 87.4835pt.
 
 
-Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 111.
+Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
+(caption)                outside box or environment on input line 110.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 111.
+(caption)                outside box or environment on input line 110.
 See the caption package documentation for explanation.
 
-[5 <./images/Xavier-Glorot-initialization-for-weights.png>] [6 <./images/dot-product-of-inputs-and-weights.png>]
-<images/sigmoid-function.png, id=47, 225.84375pt x 87.32625pt>
+[5 <./images/Xavier-Glorot-initialization-for-weights.png>]
+<images/model.png, id=41, 1106.63437pt x 623.32875pt>
+File: images/model.png Graphic file (type png)
+<use images/model.png>
+Package pdftex.def Info: images/model.png  used on input line 119.
+(pdftex.def)             Requested size: 276.00105pt x 155.46086pt.
+ [6 <./images/dot-product-of-inputs-and-weights.png> <./images/model.png>]
+<images/sigmoid-function.png, id=50, 225.84375pt x 87.32625pt>
 File: images/sigmoid-function.png Graphic file (type png)
 <use images/sigmoid-function.png>
-Package pdftex.def Info: images/sigmoid-function.png  used on input line 149.
+Package pdftex.def Info: images/sigmoid-function.png  used on input line 153.
 (pdftex.def)             Requested size: 172.5pt x 66.70442pt.
 
 
-Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 152.
+Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
+(caption)                outside box or environment on input line 156.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 152.
+(caption)                outside box or environment on input line 156.
 See the caption package documentation for explanation.
 
-<images/sigmoid-derivative.png, id=48, 277.78781pt x 73.02281pt>
+<images/sigmoid-derivative.png, id=51, 277.78781pt x 73.02281pt>
 File: images/sigmoid-derivative.png Graphic file (type png)
 <use images/sigmoid-derivative.png>
-Package pdftex.def Info: images/sigmoid-derivative.png  used on input line 164.
+Package pdftex.def Info: images/sigmoid-derivative.png  used on input line 168.
+
 (pdftex.def)             Requested size: 172.5pt x 45.34608pt.
 [7] [8 <./images/sigmoid-function.png> <./images/sigmoid-derivative.png>]
-File: images/Xavier-Glorot-initialization-for-weights.png Graphic file (type png)
+
+LaTeX Warning: Citation 'algorithms' on page 9 undefined on input line 179.
+
+File: images/Xavier-Glorot-initialization-for-weights.png Graphic file (type pn
+g)
 <use images/Xavier-Glorot-initialization-for-weights.png>
-Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  used on input line 179.
+Package pdftex.def Info: images/Xavier-Glorot-initialization-for-weights.png  u
+sed on input line 183.
 (pdftex.def)             Requested size: 345.0pt x 71.26955pt.
 
-
-Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 182.
+Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
+(caption)                outside box or environment on input line 186.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 182.
+(caption)                outside box or environment on input line 186.
 See the caption package documentation for explanation.
 
-<images/apply-gradients.png, id=65, 320.69812pt x 129.48375pt>
+<images/apply-gradients.png, id=68, 320.69812pt x 129.48375pt>
 File: images/apply-gradients.png Graphic file (type png)
 <use images/apply-gradients.png>
-Package pdftex.def Info: images/apply-gradients.png  used on input line 187.
+Package pdftex.def Info: images/apply-gradients.png  used on input line 191.
 (pdftex.def)             Requested size: 345.0pt x 139.29898pt.
-<images/layer-gradient.png, id=66, 398.23781pt x 119.69719pt>
+<images/layer-gradient.png, id=69, 398.23781pt x 119.69719pt>
 File: images/layer-gradient.png Graphic file (type png)
 <use images/layer-gradient.png>
-Package pdftex.def Info: images/layer-gradient.png  used on input line 194.
+Package pdftex.def Info: images/layer-gradient.png  used on input line 198.
 (pdftex.def)             Requested size: 345.0pt x 103.69917pt.
 
-Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 197.
+Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
+(caption)                outside box or environment on input line 201.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 197.
+(caption)                outside box or environment on input line 201.
 See the caption package documentation for explanation.
 
 [9 <./images/apply-gradients.png>]
-<images/data-load.png, id=71, 408.77719pt x 216.05719pt>
+<images/data-load.png, id=74, 408.77719pt x 216.05719pt>
 File: images/data-load.png Graphic file (type png)
 <use images/data-load.png>
-Package pdftex.def Info: images/data-load.png  used on input line 205.
+Package pdftex.def Info: images/data-load.png  used on input line 209.
 (pdftex.def)             Requested size: 345.0pt x 182.35713pt.
 
 
-Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 208.
+Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
+(caption)                outside box or environment on input line 212.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 208.
+(caption)                outside box or environment on input line 212.
 See the caption package documentation for explanation.
 
-<images/main.png, id=72, 505.13719pt x 376.40625pt>
+<images/main.png, id=75, 505.13719pt x 376.40625pt>
 File: images/main.png Graphic file (type png)
 <use images/main.png>
-Package pdftex.def Info: images/main.png  used on input line 213.
+Package pdftex.def Info: images/main.png  used on input line 217.
 (pdftex.def)             Requested size: 345.0pt x 257.08432pt.
 
-Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 216.
+Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
+(caption)                outside box or environment on input line 220.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 216.
+(caption)                outside box or environment on input line 220.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 216.
+(Font)              <9> on input line 220.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 216.
+(Font)              <6> on input line 220.
 [10 <./images/layer-gradient.png>]
-<images/backpropagate.png, id=77, 734.745pt x 202.50656pt>
+
+LaTeX Warning: Citation 'ffn_wiki' on page 11 undefined on input line 225.
+
+<images/backpropagate.png, id=80, 734.745pt x 202.50656pt>
 File: images/backpropagate.png Graphic file (type png)
 <use images/backpropagate.png>
-Package pdftex.def Info: images/backpropagate.png  used on input line 229.
+Package pdftex.def Info: images/backpropagate.png  used on input line 233.
 (pdftex.def)             Requested size: 345.0pt x 95.08847pt.
-<images/calculate-gradients.png, id=78, 341.02406pt x 87.32625pt>
+<images/calculate-gradients.png, id=81, 341.02406pt x 87.32625pt>
 File: images/calculate-gradients.png Graphic file (type png)
 <use images/calculate-gradients.png>
-Package pdftex.def Info: images/calculate-gradients.png  used on input line 236.
+Package pdftex.def Info: images/calculate-gradients.png  used on input line 240
+.
 (pdftex.def)             Requested size: 345.0pt x 88.34938pt.
 
-
-Package caption Warning: \setcaptionsubtype
-(caption)                outside box or environment on input line 239.
+Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
+(caption)                outside box or environment on input line 243.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 239.
+(caption)                outside box or environment on input line 243.
 See the caption package documentation for explanation.
 
-[11 <./images/data-load.png>] [12] [13] [14] [15] [16] [17] [18 <./images/main.png>] [19 <./images/backpropagate.png> <./images/calculate-gradients.png>] (zsi.aux)
- ***********
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-29>
- ***********
+[11 <./images/data-load.png>] [12] [13]
+Overfull \hbox (1.4154pt too wide) in paragraph at lines 343--343
+[]        \T1/cmtt/m/n/10 "./input/train-images-idx3-ubyte/train-images-idx3-ub
+yte",[] 
+ []
+
+
+Overfull \hbox (1.4154pt too wide) in paragraph at lines 343--343
+[]        \T1/cmtt/m/n/10 "./input/train-labels-idx1-ubyte/train-labels-idx1-ub
+yte",[] 
+ []
+
+
+Overfull \hbox (69.64874pt too wide) in paragraph at lines 343--343
+[]        \T1/cmtt/m/n/10 flattened_image = [pixel for sublist in images[j] for
+ pixel in sublist][] 
+ []
+
+
+Overfull \hbox (6.66412pt too wide) in paragraph at lines 343--343
+[]        \T1/cmtt/m/n/10 test_data.append(DataPoint(flattened_image, labels[j]
+, 10))[] 
+ []
+
+[14]
+Overfull \hbox (38.15643pt too wide) in paragraph at lines 343--343
+[]        \T1/cmtt/m/n/10 # Forward pass through the network to obtain the pred
+icted output[] 
+ []
+
+
+Overfull \hbox (59.1513pt too wide) in paragraph at lines 343--343
+[]    \T1/cmtt/m/n/10 # Initialize a counter to keep track of the number of cor
+rect predictions[] 
+ []
+
+<images/ui.png, id=96, 433.62pt x 375.65344pt>
+File: images/ui.png Graphic file (type png)
+<use images/ui.png>
+Package pdftex.def Info: images/ui.png  used on input line 356.
+(pdftex.def)             Requested size: 276.00105pt x 239.11621pt.
+[15] [16]
+
+LaTeX Warning: Empty bibliography on input line 367.
+
+[17 <./images/main.png>] [18 <./images/backpropagate.png> <./images/calculate-g
+radients.png>] [19 <./images/ui.png>] (./zsi.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                zsi
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'zsi.run.xml'.
 \openout1 = `zsi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32071 strings out of 475248
- 795240 string characters out of 5757813
- 1935785 words of memory out of 5000000
- 53165 multiletter control sequences out of 15000+600000
- 571288 words of font info for 59 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 99i,18n,103p,1069b,2115s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\pawel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/pawel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on zsi.pdf (20 pages, 375210 bytes).
+ 32064 strings out of 478016
+ 791258 string characters out of 5840067
+ 1868330 words of memory out of 5000000
+ 51759 multiletter control sequences out of 15000+600000
+ 524820 words of font info for 54 fonts, out of 8000000 for 9000
+ 34 hyphenation exceptions out of 8191
+ 99i,18n,103p,1018b,2113s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/teriyakigod/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx09
+00.600pk> </home/teriyakigod/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec
+/ectt0900.600pk> </home/teriyakigod/.texlive2022/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecrm0900.600pk> </home/teriyakigod/.texlive2022/texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ectt1000.600pk> </home/teriyakigod/.texlive2022/texmf-var/fonts/
+pk/ljfour/jknappen/ec/tcrm1000.600pk> </home/teriyakigod/.texlive2022/texmf-var
+/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/teriyakigod/.texlive2022/te
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/teriyakigod/.texlive
+2022/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/teriyakigod/.
+texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/teriya
+kigod/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home
+/teriyakigod/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1440.600pk>
+ </home/teriyakigod/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074
+.600pk> </home/teriyakigod/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+ccc1440.600pk> </home/teriyakigod/.texlive2022/texmf-var/fonts/pk/ljfour/jknapp
+en/ec/eccc1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on zsi.pdf (20 pages, 455995 bytes).
 PDF statistics:
- 630 PDF objects out of 1000 (max. 8388607)
+ 652 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

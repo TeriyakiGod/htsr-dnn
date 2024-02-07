@@ -25,7 +25,7 @@ ax1 = fig.add_subplot(211)
 ax2 = fig.add_subplot(212)
 
 training_data = []
-for j in range(1000):
+for j in range(len(images)):
     flattened_image = [pixel for sublist in images[j] for pixel in sublist]
     training_data.append(DataPoint(flattened_image, labels[j], 10))
 batches = []

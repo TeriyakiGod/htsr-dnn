@@ -22,10 +22,13 @@
 \contentsline {subsection}{\numberline {8.2}Characteristics}{12}{}%
 \contentsline {subsection}{\numberline {8.3}Impact on Optimization}{12}{}%
 \contentsline {subsection}{\numberline {8.4}Optimization Strategies}{12}{}%
-\contentsline {section}{\numberline {9}Learning algorithm - naive approach, calculus approach, digit recognition - Kacper}{13}{}%
-\contentsline {section}{\numberline {10}Chain Rule}{14}{}%
-\contentsline {subsection}{\numberline {10.1}Definition}{14}{}%
-\contentsline {subsection}{\numberline {10.2}Application in Backpropagation}{14}{}%
-\contentsline {subsection}{\numberline {10.3}Examples from our code}{14}{}%
-\contentsline {section}{\numberline {11}Testing the network}{15}{}%
-\contentsline {section}{\numberline {12}Conclusion}{16}{}%
+\contentsline {section}{\numberline {9}Chain Rule}{13}{}%
+\contentsline {subsection}{\numberline {9.1}Definition}{13}{}%
+\contentsline {subsection}{\numberline {9.2}Application in Backpropagation}{13}{}%
+\contentsline {section}{\numberline {10}Testing the network}{14}{}%
+\contentsline {subsection}{\numberline {10.1}Test Dataset}{14}{}%
+\contentsline {subsection}{\numberline {10.2}Evaluation Metrics}{14}{}%
+\contentsline {subsection}{\numberline {10.3}Example Code}{14}{}%
+\contentsline {subsection}{\numberline {10.4}Testing Results}{15}{}%
+\contentsline {subsection}{\numberline {10.5}User Interface}{15}{}%
+\contentsline {section}{\numberline {11}Conclusion}{16}{}%
