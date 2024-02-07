@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\contentsline {section}{\numberline {2}Our goal}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Specific objectives}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Expected Outcomes}{3}{}%
+\contentsline {section}{\numberline {3}Decision Boundary}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Definition}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Adaptability}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Optimization Impact}{4}{}%
+\contentsline {section}{\numberline {4}Weights and Biases}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Initialization}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Weighted sum of inputs}{5}{}%
+\contentsline {section}{\numberline {5}Our model}{6}{}%
+\contentsline {section}{\numberline {6}Activation functions}{7}{}%
+\contentsline {subsection}{\numberline {6.1}Sigmoid function}{7}{}%
+\contentsline {subsection}{\numberline {6.2}The derivative of the sigmoid function}{7}{}%
+\contentsline {section}{\numberline {7}Gradient descent and backpropagation}{9}{}%
+\contentsline {subsection}{\numberline {7.1}Gradients of the cost function}{9}{}%
+\contentsline {subsection}{\numberline {7.2}Data loading and learning}{10}{}%
+\contentsline {subsection}{\numberline {7.3}Backpropagation}{11}{}%
+\contentsline {section}{\numberline {8}Cost Landscape}{12}{}%
+\contentsline {subsection}{\numberline {8.1}Definition}{12}{}%
+\contentsline {subsection}{\numberline {8.2}Characteristics}{12}{}%
+\contentsline {subsection}{\numberline {8.3}Impact on Optimization}{12}{}%
+\contentsline {subsection}{\numberline {8.4}Optimization Strategies}{12}{}%
+\contentsline {section}{\numberline {9}Chain Rule}{13}{}%
+\contentsline {subsection}{\numberline {9.1}Definition}{13}{}%
+\contentsline {subsection}{\numberline {9.2}Application in Backpropagation}{13}{}%
+\contentsline {section}{\numberline {10}Testing the network}{14}{}%
+\contentsline {subsection}{\numberline {10.1}Test Dataset}{14}{}%
+\contentsline {subsection}{\numberline {10.2}Evaluation Metrics}{14}{}%
+\contentsline {subsection}{\numberline {10.3}Example Code}{14}{}%
+\contentsline {subsection}{\numberline {10.4}Testing Results}{15}{}%
+\contentsline {subsection}{\numberline {10.5}User Interface}{15}{}%
+\contentsline {section}{\numberline {11}Conclusion}{16}{}%

@@ -1,87 +1,88 @@
-##@package neural_network
-# Neural network implementation.
-
-# Take all values from connected neurons multiplied by their respective weight, 
-# add them, and apply an activation function. 
-# Then, the neuron is ready to send its new value to other neurons.
-
 import numpy as np
-import matplotlib.pyplot as plt
 import activation_functions as af
+import pickle
+
 
 class NeuralNetwork:
-    ##Neural Network.
+    def __init__(self, *nOfNodesInLayers):
+        self.layers = [Layer(nOfNodesInLayers[i], nOfNodesInLayers[i + 1]) for i in range(len(nOfNodesInLayers) - 1)]
+    
+    def calculate_outputs(self, inputs):
+        for layer in self.layers:
+            inputs = layer.calculate_outputs(inputs)
+        return inputs
+    
+    def cost(self, data_point):
+        outputs = self.calculate_outputs(data_point.inputs)
+        output_layer = self.layers[-1]
+        cost = 0
 
-    def __init__(self, numOfInputs, numOfHiddenLayers, numOfOutputs):
-        ##Neural network constructor.
-        # @param numOfInputs (int): Number of input nodes.
-        # @param numOfHiddenLayers (int): Number of hidden layers.
-        # @param numOfOutputs (int): Number of output nodes.
-        self.numOfInputs = numOfInputs
-        self.numOfHiddenLayers = numOfHiddenLayers
-        self.numOfOutputs = numOfOutputs
-        self.layers = []
-        self.create_layers(numOfInputs, numOfHiddenLayers, numOfOutputs)
-        self.print_info_about_architecture()
+        for i in range(len(outputs)):
+            cost += output_layer.node_cost(outputs[i], data_point.expected_outputs[i])
+        return cost
 
-    def create_layers(self, numOfInputs, numOfHiddenLayers, numOfOutputs):
-        ##Creates layers for the neural network.
-        # @param numOfInputs (int): Number of input nodes.
-        # @param numOfHiddenLayers (int): Number of hidden layers.
-        # @param numOfOutputs (int): Number of output nodes.
-        inputLayer = Layer(numOfInputs, np.random.randint(5, 15))
-        self.layers.append(inputLayer)
+    def total_cost(self, data):
+        total_cost = sum(self.cost(data_point) for data_point in data)
+        return total_cost / len(data)
+    
+    def learn(self, training_data, learning_rate):
+        for data_point in training_data:
+            self.backpropagate(data_point)
+        self.apply_gradients(learning_rate)
+    
+    def backpropagate(self, data_point):
+        outputs = self.calculate_outputs(data_point.inputs)
+        deltas = [output - expected_output for output, expected_output in zip(outputs, data_point.expected_outputs)]
 
-        for i in range(numOfHiddenLayers):
-            if i == 0:
-                hiddenLayer = Layer(numOfInputs, np.random.randint(5, 15))
-                self.layers.append(hiddenLayer)
+        for i in reversed(range(len(self.layers))):
+            layer = self.layers[i]
+            inputs = data_point.inputs if i == 0 else self.layers[i - 1].calculate_outputs(data_point.inputs)
+            layer.calculate_gradients(inputs, deltas)
+            if i > 0 and i < len(self.layers) - 1:
+                deltas = np.dot(layer.weights, deltas) * af.sigmoid_derivative(layer.calculate_outputs(data_point.inputs))
+
+    def apply_gradients(self, learning_rate):
+        for layer in self.layers:
+            if self.layers.index(layer) == 0:
+                continue
             else:
-                hiddenLayer = Layer(self.layers[-1].numNodesOut, np.random.randint(5, 15))
-                self.layers.append(hiddenLayer)
+                layer.apply_gradients(learning_rate)
 
-        outputLayer = Layer(self.layers[-1].numNodesOut, numOfOutputs)
-        self.layers.append(outputLayer)
+    def save_model(self, file_path):
+        with open(file_path, 'wb') as file:
+            pickle.dump(self, file)
 
-    def print_info_about_architecture(self):
-        ##Prints information about the neural network's architecture.
-        print("Initializing Neural Network with:")
-        for i, layer in enumerate(self.layers):
-            if i == 0:
-                print(f"Input Layer: {layer.numNodesIn} nodes")
-            elif i == len(self.layers) - 1:
-                print(f"Output Layer: {layer.numNodesOut} nodes and {layer.numNodesIn} inputs")
-            else:
-                print(f"Hidden Layer {i}: {layer.numNodesOut} nodes and {layer.numNodesIn} inputs")
+    @staticmethod
+    def load_model(file_path):
+        with open(file_path, 'rb') as file:
+            model = pickle.load(file)
+        return model
 
 class Layer:
-    ##Layer within a Neural Network.
-
-    def __init__(self, numNodesIn, numNodesOut):
-        ##Layer constructor.
-
-        self.numNodesIn = numNodesIn
-        self.numNodesOut = numNodesOut
-        self.weights = np.random.rand(self.numNodesIn, self.numNodesOut)
-        self.biases = np.random.randn(self.numNodesOut)
-
-    def calculate_outputs(self, inputs):
-        ##Calculates outputs of the layer based on the given inputs.
-        # @param inputs (float[]): Inputs to the layer.
-        # @return float[]: Outputs of the layer.
-
-        weighted_inputs = np.dot(inputs, self.weights) + self.biases # Iloczyn skalarny
-        
-        #return af.relu(weighted_inputs)
-        return weighted_inputs
+    def __init__(self, num_nodes_in, num_nodes_out):
+        self.num_nodes_in = num_nodes_in
+        self.num_nodes_out = num_nodes_out
+        self.weights = np.random.randn(self.num_nodes_in, self.num_nodes_out) * np.sqrt(2.0 / (self.num_nodes_in + self.num_nodes_out))
+        self.biases = np.random.randn(self.num_nodes_out)
+        self.cost_gradient_w = np.zeros((self.num_nodes_in, self.num_nodes_out))
+        self.cost_gradient_b = np.zeros(self.num_nodes_out)
+        self.weight_constant = 0.9
     
-    def print_outputs(self, inputs):
-        ##Prints generated weights, biases and calculated outputs of a Layer.
-        np.set_printoptions(precision=2)
-        print("Weights:")
-        print(self.weights)
-        print("Biases:")
-        print(self.biases)
-        outputs = self.calculate_outputs(inputs)
-        print("Outputs:")
-        print(outputs)
+    def node_cost(self, output_activation, expected_output):
+        error = expected_output - output_activation
+        return error * error
+    
+    def calculate_outputs(self, inputs):
+        weighted_inputs = np.dot(inputs, self.weights) + self.biases
+        outputs = af.sigmoid(weighted_inputs)
+        return outputs
+
+    
+    def calculate_gradients(self, inputs, deltas):
+        self.cost_gradient_w = np.outer(inputs, deltas)
+        self.cost_gradient_b = np.array(deltas)
+
+    
+    def apply_gradients(self, learning_rate):
+        self.weights -= learning_rate * self.cost_gradient_w
+        self.biases -= learning_rate * self.cost_gradient_b

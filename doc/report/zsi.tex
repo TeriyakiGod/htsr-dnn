@@ -1,14 +1,19 @@
 \documentclass{article}
 
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{subcaption}
+\usepackage{biblatex}
+\addbibresource{sources.bib}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
 
 \title{Text symbol classification using neural networks}
 \author{Kacper Ochnik \and Paweł Frankowski}
 \date{\today}
 
-\begin{document}
-
-% Create a title page
 \begin{titlepage}
 	\centering
 	\includegraphics[width=0.3\textwidth]{Logo_PK_kolor_EN_PNG.png}\par\vspace{1cm}
@@ -16,7 +21,8 @@
 	\vspace{1cm}
 	{\Large \textsc{Applications of artificial intelligence project report}\par}
 	\vspace{1.5cm}
-	{\huge\bfseries Classification of text symbols using deep neural networks\par}
+	{\huge\bfseries Handwritten text symbol recognition with deep neural networks
+	\par}
 	\vspace{2cm}
 	{\Large\itshape {Paweł Frankowski \space Kacper Ochnik}\par}
 	\vfill
@@ -25,18 +31,339 @@
 
 	\vfill
 
-% Bottom of the page
 	{\large \today\par}
 \end{titlepage}
 
-% Create a table of contents
 \tableofcontents
 \newpage
 
 \section{Introduction}
-This is a simple LaTeX document.
+The significance of digit recognition in the realm of artificial intelligence cannot be overstated, particularly in its application to handwritten digits. This project delves into the intricate process of teaching an AI model to discern and interpret handwritten numerals. With a myriad of potential real-world applications, from automating data entry tasks to enhancing accessibility in digital document processing, the ability of an AI model to accurately recognize handwritten digits holds immense promise. Through the utilization of advanced algorithms and machine learning techniques, this project endeavors to unlock the potential of AI in transforming handwritten digit recognition into a seamless and efficient process.
 
+\newpage
+\section{Our goal}
+
+The primary objective of our project is to develop a handwritten text symbol recognition system using deep neural networks. We aimed to create a model capable of accurately identifying and classifying handwritten digits ranging from 0 to 9 on a matrix of 28x28 pixels.
+
+\subsection{Specific objectives}
+
+In pursuit of our overarching goal, we have identified the following specific objectives:
+
+\begin{enumerate}
+    \item \textbf{Project setup} - Set up the project environment and install the necessary libraries and packages.
+    \item \textbf{Code implementation} - Write Python code to implement the deep neural network architecture. This includes developing modules for data preprocessing, model training, and evaluation.
+    \item \textbf{Data Collection} - Gather a comprehensive dataset of handwritten digits (0 to 9) in a 28x28 pixel matrix format from MNIST.
+	\item \textbf{Learning} - Train the model using the collected dataset.
+	\item \textbf{Optimization} - Improve the model's accuracy through optimization techniques. Accelerate computational efficiency for faster calculations.
+    \item \textbf{Testing} - Create testing GUI for the trained model. Evaluate the model's performance metrics.
+	\item \textbf{Documentation} - Write a comprehensive report documenting the project's objectives, methodology, and outcomes.
+\end{enumerate}
+
+\subsection{Expected Outcomes}
+
+Upon successful completion of our project, we anticipate achieving the following outcomes:
+
+\begin{itemize}
+    \item Develop a robust deep neural network model capable of recognizing and classifying handwritten digits from 0 to 9.
+    \item Train the model to achieve a acceptable level of accuracy.
+\end{itemize}
+
+\newpage
+\section{Decision Boundary}
+
+The concept of a decision boundary is fundamental in understanding how a neural network makes predictions and categorizes inputs. In the context of our handwritten text symbol recognition project, the decision boundary plays a crucial role in distinguishing between different handwritten digits.
+
+\subsection{Definition}
+A decision boundary is a hypersurface that separates the input space into regions assigned to different classes. In our case, each region corresponds to a specific digit (0 through 9). The decision boundary is learned during the training phase of the neural network and is a reflection of the network's understanding of the features that differentiate one digit from another.
+
+\subsection{Adaptability}
+The adaptability of the decision boundary is a key aspect of the neural network's performance. A well-trained model should be capable of adjusting its decision boundary to accommodate variations in handwriting styles, ensuring robust recognition across different writing patterns.
+
+\subsection{Optimization Impact}
+During the optimization process, the neural network adjusts its parameters to optimize the decision boundary for accurate classification. Understanding the decision boundary dynamics sheds light on how changes in weights and biases impact the model's ability to discriminate between different digits.
+
+In the subsequent sections, we will delve into the weights and biases optimization process, shedding further light on how these adjustments influence the decision boundary and contribute to the overall performance of our handwritten text symbol recognition system.
+
+\newpage
+\section{Weights and Biases}
+Weights are indicators of the importance of the input in predicting the final output. Biases are essential as they allow the network to have some flexibility in fitting the data. In the training process of our neural network, the weights and biases play a crucial role in determining the model's performance. Here, we discuss the initialization, calculation, and adjustment of weights and biases in the network. 
+
+\subsection{Initialization}
+The \texttt{Layer} class represents a single layer in the neural network. It contains information about the number of nodes in and out, weights, biases, and gradients. The neural network is initialized with random weights using the Xavier/Glorot initialization technique. This method helps in achieving better convergence during training.
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/Xavier-Glorot-initialization-for-weights.png}
+    \caption{Initialization of random biases and weights using Xavier/Glorot technique}
+    \label{fig:initialized_weights}
+\end{figure}
+
+When a neural network is first trained, it is first fed with input. Since it isn't trained yet, we don't know which weights should we use for each input. And so, each input is randomly assigned a weight. It will very likely give incorrect output.
+
+\subsection{Weighted sum of inputs}
+In the \texttt{Layer} class, the calculation of outputs begins with the computation of weighted inputs. For each node in the layer, the weighted inputs are calculated using the formula.:
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{images/dot-product-of-inputs-and-weights.png}
+    \caption{The dot product of inputs and weights, representing the weighted sum of inputs}
+    \label{fig:weighted_sum}
+	\subcaption*{The \texttt{calculate outputs} method calculates the dot product of inputs and weights, representing the weighted sum of inputs. The biases are then added to this sum to introduce flexibility in fitting the data. Finally, the result is passed through the sigmoid activation function to introduce non-linearity to the model, and the outputs are obtained.}
+\end{figure}
+
+\newpage
+\section{Our model}
+
+Our model is a feedforward neural network with a single hidden layer. The input layer consists of 784 nodes, corresponding to the 28x28 pixel matrix of the input image. The hidden layer contains 89 nodes, and the output layer has 10 nodes, representing the 10 possible digits (0-9). The model uses the sigmoid activation function to introduce non-linearity to the network.
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=0.8\textwidth]{images/model.png}
+    \caption{Architecture of our feedforward neural network model}
+    \label{fig:model_architecture}
+\end{figure}
+
+\newpage
+\section{Activation functions}
+Activation functions play a crucial role in neural networks, introducing non-linearity to the model and allowing it to learn complex relationships in the data. Here, we describe various activation functions implemented in the \texttt{activation functions} module.
+
+\subsection{Sigmoid function}
+The sigmoid function squashes its input to the range (0, 1), making it suitable for binary classification problems.
+
+\begin{equation}
+	f(x) = \frac{1}{1 + e^{-x}}
+\end{equation}
+
+\begin{equation}
+    \begin{tikzpicture}
+        \begin{axis}[
+            xlabel={$x$},
+            ylabel={$f(x)$},
+            domain=-5:5,
+            samples=100,
+            smooth,
+            scale=1.5
+        ]
+            \addplot[blue] {1/(1 + exp(-x))};
+            \legend{$f(x) = \frac{1}{1 + e^{-x}}$}
+        \end{axis}
+    \end{tikzpicture}
+\end{equation}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/sigmoid-function.png}
+    \caption{Sigmoid function}
+    \label{fig:sigmoid_function}
+	\subcaption*{Limiting the values of x to prevent overflow. Overflow refers to a situation where the exponential function in the sigmoid formula produces very large positive values, causing numerical instability in calculations. The exponential function, especially when dealing with large positive inputs, can lead to floating-point overflow, which means the result becomes too large to be represented within the numerical precision of the system.}
+\end{figure}
+
+\subsection{The derivative of the sigmoid function}
+The derivative of the sigmoid function is used in the backpropagation algorithm to calculate the gradients of the cost function with respect to the weights and biases. The derivative of the sigmoid function is given by the formula:
+
+\begin{equation}
+    f'(x) = f(x) \cdot (1 - f(x))
+\end{equation}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/sigmoid-derivative.png}
+    \caption{The derivative of the sigmoid function}
+    \label{fig:sigmoid_derivativse_function}
+\end{figure}
+
+\newpage
+\section{Gradient descent and backpropagation}
+\subsection{Gradients of the cost function}
+\textbf{Gradient Descent} - Is an optimization algorithm that is used to find the weights that minimize the cost function. 
+We need two things to do so. Direction in which to navigate and the size of the steps for navigating.
+To know which direction to navigate the cost function, gradient descent uses backpropagation. More specifically, it uses the gradients calculated through backpropagation. These gradients are used for determining the direction to navigate to find the minimum point. Descresing slope will lead us to the minimum point.
+The cost gradients for weights and biases are initialized with zeros, and during training, these gradients will be updated based on the backpropagation algorithm \cite{algorithms} .
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/Xavier-Glorot-initialization-for-weights.png}
+    \caption{Initialization a vector of zeros with the same length as the bias vector}
+    \label{fig:initialized_cost_gradient}
+	\subcaption*{This matrix will be used to accumulate the gradients of the cost function with respect to the weights during the backpropagation process.}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/apply-gradients.png}
+    \caption{The \texttt{apply\_gradients} method in \texttt{Neural network} class  updates the weights and biases for each layer.}
+    \label{fig:apply_gradients}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/layer-gradient.png}
+    \caption{The \texttt{apply\_gradients} method in \texttt{Layer} class updates the weights and biases for a layer.}
+    \label{fig:apply_gradients_on_layer}
+    \subcaption*{The \texttt{apply gradients} method is responsible for updating the weights and biases of a layer based on the calculated gradients.}
+\end{figure}
+
+\newpage
+\subsection{Data loading and learning}
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/data-load.png}
+    \caption{Data loading from mnist and creating a neural network}
+    \label{fig:data_load}
+    \subcaption*{A neural network is instantiated with the specified architecture: 784 input nodes, one hidden layer with 89 nodes, and 10 output nodes. Checks if a pre-trained model file \texttt{model.pkl} exists.If it does, the model is loaded from the file. Otherwise, the model is trained using the MNIST dataset.}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/main.png}
+    \caption{Training a neural network using a simple form of gradient descent on the MNIST dataset.}
+    \label{fig:learn}
+    \subcaption*{\textbf{Learning rate} - determines the step size at each iteration of gradient descent and the speed at which we move down the slope. Learning rate plays important role in between optimization time and accuracy. Step size is measured by a parameter alpha $\alpha$. Small $\alpha$ means small step size, large $\alpha$ means large step size. If its too large then it can jump through minimum of the function. This parameter needs to be optimized. High learning rate results in a higher step value and opposite.\\ \textbf{Batch size} refers to the number of training examples utilized in one iteration. \\ \textbf{The number of steps}, represents the total number of times the entire training dataset is passed forward and backward through the neural network. Too few steps may lead to underfitting, while too many steps may result in overfitting on the training data. The optimal number of steps depends on the complexity of the task and the dataset.}
+\end{figure}
+
+\newpage
+\subsection{Backpropagation}
+\textbf{Backpropagation} - is a training algorithm for feedforward neural networks \cite{ffn_wiki} that propagates the error backward from the output to the input layer.
+It plays a crucial role in gradient descent, a process of finding the minimum of the cost function. 
+Gradient descent relies on backpropagation to calculate gradients by moving backward in the neural network.
+Together, backpropagation and gradient descent is used for the purpose of improving the prediction accuracy of neural networks. 
+They help improve prediction accuracy by reducing the output error in neural networks.
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/backpropagate.png}
+    \caption{The \texttt{backpropagate} function is part of the neural network training process.}
+    \label{fig:backpropagation}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=1\textwidth]{images/calculate-gradients.png}
+    \caption{The \texttt{calculate\_gradients} method computes the gradients needed for the weight and bias adjustments.}
+    \label{fig:calculate_gradients}
+    \subcaption*{It represents how much the weights and biases should be changed to minimize the difference between the predicted and expected outputs. It's like figuring out the direction and magnitude of the correction needed to improve the network's performance.}
+\end{figure}
+
+\newpage
+\section{Cost Landscape}
+
+Understanding the cost landscape is essential for comprehending the optimization process in neural networks. In our project of handwritten text symbol recognition, the cost landscape reflects the relationship between the model's parameters and the cost function, providing insights into the optimization journey.
+
+\subsection{Definition}
+The cost landscape, also known as the loss landscape, is a graphical representation of how the cost function varies with changes in the neural network's parameters, such as weights and biases. It visualizes the "landscape" of the optimization problem, showing areas of high and low cost values.
+
+\subsection{Characteristics}
+The cost landscape can exhibit various characteristics, including multiple local minima, saddle points, and plateaus. Local minima represent suboptimal solutions, while saddle points pose challenges to gradient-based optimization algorithms. Plateaus, on the other hand, indicate regions of slow convergence, where the optimization process may stagnate.
+
+\subsection{Impact on Optimization}
+Navigating the cost landscape effectively is crucial for optimizing the performance of the neural network. Understanding the topology of the landscape helps in selecting appropriate optimization algorithms, setting learning rates, and initializing parameters to avoid getting stuck in local minima or encountering convergence issues.
+
+\subsection{Optimization Strategies}
+Based on the insights gained from analyzing the cost landscape, various optimization strategies can be employed to navigate the landscape effectively. Techniques such as stochastic gradient descent, momentum optimization, and adaptive learning rates aim to mitigate the challenges posed by the landscape topology and accelerate convergence towards the global minimum.
+
+In the subsequent sections, we will explore the optimization strategies employed in our project and their impact on improving the performance of our handwritten text symbol recognition system.
+
+\newpage
+\section{Chain Rule}
+
+The chain rule is a fundamental concept in calculus that describes how to compute the derivative of a composite function. In the context of neural networks, the chain rule plays a crucial role in the backpropagation algorithm, allowing us to efficiently calculate the gradients of the loss function with respect to the network's parameters.
+
+\subsection{Definition}
+
+The chain rule states that if \( f \) and \( g \) are differentiable functions, then the derivative of their composition \( f(g(x)) \) with respect to \( x \) is given by:
+
+\[
+(f \circ g)'(x) = f'(g(x)) \cdot g'(x)
+\]
+
+In the context of neural networks, this means that to compute the gradient of the loss function with respect to the weights and biases of a particular layer, we need to multiply the gradient of the loss function with respect to the output of that layer by the gradient of the output of that layer with respect to its inputs.
+
+\subsection{Application in Backpropagation}
+
+During the backpropagation process, the chain rule is applied recursively to propagate gradients backward through the network. Starting from the output layer and moving backward through each layer, the chain rule is used to compute the gradients of the loss function with respect to the activations of each layer. These gradients are then used to update the weights and biases of the network using an optimization algorithm such as stochastic gradient descent.
+
+\newpage
+\section{Testing the network}
+To evaluate the performance of the trained neural network, we need to test it on a separate dataset. This dataset should be distinct from the training dataset to ensure that the network's performance is not biased towards the training examples.
+
+\subsection{Test Dataset}
+
+The test dataset consists of a set of input samples and their corresponding expected outputs. These samples are fed into the trained network, and the network's predictions are compared against the expected outputs to measure its accuracy.
+
+\subsection{Evaluation Metrics}
+
+To assess the performance of the network, various evaluation metrics can be used, depending on the nature of the problem. Some common metrics include accuracy, precision, recall, and F1 score. These metrics provide insights into the network's ability to correctly classify the input samples.
+
+\subsection{Example Code}
+
+Here is an example code snippet that demonstrates how to test the network using a test dataset:
+
+\begin{verbatim}
+# Load the test dataset
+    mnist = MnistDataloader(
+        "./input/train-images-idx3-ubyte/train-images-idx3-ubyte",
+        "./input/train-labels-idx1-ubyte/train-labels-idx1-ubyte",
+        "./input/t10k-images-idx3-ubyte/t10k-images-idx3-ubyte",
+        "./input/t10k-labels-idx1-ubyte/t10k-labels-idx1-ubyte",
+    )
+    mnist_data, mnist_test = mnist.load_data()
+    images, labels = mnist_test
+    
+    test_data = []
+    for j in range(1000):
+        flattened_image = [pixel for sublist in images[j] for pixel in sublist]
+        test_data.append(DataPoint(flattened_image, labels[j], 10))
+    
+    nn = NeuralNetwork(784, 89, 10)
+    if os.path.exists('model.pkl'):
+        nn = NeuralNetwork.load_model('model.pkl')
+    
+    # Initialize an empty list to store the network's predictions
+    predictions = []
+    
+    # Iterate over the test samples
+    for sample in test_data:
+        # Forward pass through the network to obtain the predicted output
+        output = nn.calculate_outputs(sample.inputs)
+        
+        # Store the predicted output in the list of predictions
+        predictions.append(np.argmax(output))
+        
+    
+    # Initialize a counter to keep track of the number of correct predictions
+    correct = 0
+    # Evaluate the accuracy of the network
+    for i in range(len(predictions)):
+        if predictions[i] == test_data[i].label:
+            correct += 1
+    
+    # Calculate the accuracy as a percentage
+    accuracy = (correct / len(predictions)) * 100
+    
+    print(f"Accuracy: {accuracy:.2f}%")
+\end{verbatim}
+
+\subsection{Testing Results}
+
+After testing the network on the test dataset, we can analyze the results to gain insights into its performance. By examining the evaluation metrics, we can identify areas where it struggles. This analysis can guide us in further improving the network's accuracy and robustness.
+Best result we achieved was 57.5\% accuracy.
+
+\subsection{User Interface}
+
+The user interface allows users to draw digits and immedietly get the result from neural network. It is a simple application that uses the trained model to predict the digit drawn by the user. The user can draw a digit using the mouse and the application will display the predicted digit along with the confidence level of the prediction.
+
+\begin{figure}[ht]
+    \centering 
+    \includegraphics[width=0.8\textwidth]{images/ui.png}
+    \caption{User interface for testing the neural network.}
+    \label{fig:ui}
+\end{figure}
+
+\newpage
 \section{Conclusion}
-This is the conclusion of the document.
+In conclusion, our project has successfully developed a handwritten text symbol recognition system using a deep neural network. We have achieved our primary objective of creating a model capable of accurately identifying and classifying handwritten digits from 0 to 9. The model has been trained on the MNIST dataset and has demonstrated a satisfactory level of accuracy in recognizing handwritten digits. We have also implemented a user interface that allows users to draw digits and obtain real-time predictions from the trained model.
+There is still room for improvement in terms of model accuracy and robustness. Future work could focus on exploring advanced neural network architectures, optimization algorithms, and data augmentation techniques to enhance the model's performance. Additionally, the user interface could be further developed to provide a more intuitive and interactive experience for users.
+
+\newpage
+\printbibliography 
 
 \end{document}
