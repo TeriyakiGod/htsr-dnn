@@ -16,7 +16,7 @@
 
 \begin{titlepage}
 	\centering
-	\includegraphics[width=0.3\textwidth]{Logo_PK_kolor_EN_PNG.png}\par\vspace{1cm}
+	\includegraphics[width=0.3\textwidth]{images/Logo_PK_kolor_EN_PNG.png}\par\vspace{1cm}
 	{\textsc{Koszalin University of Technology} \par}
 	\vspace{1cm}
 	{\Large \textsc{Applications of artificial intelligence project report}\par}
@@ -39,6 +39,8 @@
 
 \section{Introduction}
 The significance of digit recognition in the realm of artificial intelligence cannot be overstated, particularly in its application to handwritten digits. This project delves into the intricate process of teaching an AI model to discern and interpret handwritten numerals. With a myriad of potential real-world applications, from automating data entry tasks to enhancing accessibility in digital document processing, the ability of an AI model to accurately recognize handwritten digits holds immense promise. Through the utilization of advanced algorithms and machine learning techniques, this project endeavors to unlock the potential of AI in transforming handwritten digit recognition into a seamless and efficient process.
+
+The project is hosted on GitHub and can be accessed at the following link: \url{https://github.com/TeriyakiGod/htsr-dnn}
 
 \newpage
 \section{Our goal}
@@ -99,7 +101,7 @@ The \texttt{Layer} class represents a single layer in the neural network. It con
 \end{figure}
 
 When a neural network is first trained, it is first fed with input. Since it isn't trained yet, we don't know which weights should we use for each input. And so, each input is randomly assigned a weight. It will very likely give incorrect output.
-
+\newpage
 \subsection{Weighted sum of inputs}
 In the \texttt{Layer} class, the calculation of outputs begins with the computation of weighted inputs. For each node in the layer, the weighted inputs are calculated using the formula.:
 \begin{figure}[ht]
@@ -153,9 +155,9 @@ The sigmoid function squashes its input to the range (0, 1), making it suitable 
     \includegraphics[width=0.5\textwidth]{images/sigmoid-function.png}
     \caption{Sigmoid function}
     \label{fig:sigmoid_function}
-	\subcaption*{Limiting the values of x to prevent overflow. Overflow refers to a situation where the exponential function in the sigmoid formula produces very large positive values, causing numerical instability in calculations. The exponential function, especially when dealing with large positive inputs, can lead to floating-point overflow, which means the result becomes too large to be represented within the numerical precision of the system.}
 \end{figure}
 
+\newpage
 \subsection{The derivative of the sigmoid function}
 The derivative of the sigmoid function is used in the backpropagation algorithm to calculate the gradients of the cost function with respect to the weights and biases. The derivative of the sigmoid function is given by the formula:
 
@@ -171,8 +173,7 @@ The derivative of the sigmoid function is used in the backpropagation algorithm 
 \end{figure}
 
 \newpage
-\section{Gradient descent and backpropagation}
-\subsection{Gradients of the cost function}
+\section{Gradient descent}
 \textbf{Gradient Descent} - Is an optimization algorithm that is used to find the weights that minimize the cost function. 
 We need two things to do so. Direction in which to navigate and the size of the steps for navigating.
 To know which direction to navigate the cost function, gradient descent uses backpropagation. More specifically, it uses the gradients calculated through backpropagation. These gradients are used for determining the direction to navigate to find the minimum point. Descresing slope will lead us to the minimum point.
@@ -200,9 +201,9 @@ The cost gradients for weights and biases are initialized with zeros, and during
     \label{fig:apply_gradients_on_layer}
     \subcaption*{The \texttt{apply gradients} method is responsible for updating the weights and biases of a layer based on the calculated gradients.}
 \end{figure}
-
+\clearpage
 \newpage
-\subsection{Data loading and learning}
+\section{Data loading}
 
 \begin{figure}[ht]
     \centering 
@@ -211,17 +212,19 @@ The cost gradients for weights and biases are initialized with zeros, and during
     \label{fig:data_load}
     \subcaption*{A neural network is instantiated with the specified architecture: 784 input nodes, one hidden layer with 89 nodes, and 10 output nodes. Checks if a pre-trained model file \texttt{model.pkl} exists.If it does, the model is loaded from the file. Otherwise, the model is trained using the MNIST dataset.}
 \end{figure}
-
+\clearpage
+\newpage
+\section{Training the network}
 \begin{figure}[ht]
     \centering 
     \includegraphics[width=1\textwidth]{images/main.png}
     \caption{Training a neural network using a simple form of gradient descent on the MNIST dataset.}
     \label{fig:learn}
-    \subcaption*{\textbf{Learning rate} - determines the step size at each iteration of gradient descent and the speed at which we move down the slope. Learning rate plays important role in between optimization time and accuracy. Step size is measured by a parameter alpha $\alpha$. Small $\alpha$ means small step size, large $\alpha$ means large step size. If its too large then it can jump through minimum of the function. This parameter needs to be optimized. High learning rate results in a higher step value and opposite.\\ \textbf{Batch size} refers to the number of training examples utilized in one iteration. \\ \textbf{The number of steps}, represents the total number of times the entire training dataset is passed forward and backward through the neural network. Too few steps may lead to underfitting, while too many steps may result in overfitting on the training data. The optimal number of steps depends on the complexity of the task and the dataset.}
 \end{figure}
-
+\textbf{Learning rate} - determines the step size at each iteration of gradient descent and the speed at which we move down the slope. Learning rate plays important role in between optimization time and accuracy. Step size is measured by a parameter alpha $\alpha$. Small $\alpha$ means small step size, large $\alpha$ means large step size. If its too large then it can jump through minimum of the function. This parameter needs to be optimized. High learning rate results in a higher step value and opposite.\\ \textbf{Batch size} refers to the number of training examples utilized in one iteration. \\ \textbf{The number of steps}, represents the total number of times the entire training dataset is passed forward and backward through the neural network. Too few steps may lead to underfitting, while too many steps may result in overfitting on the training data. The optimal number of steps depends on the complexity of the task and the dataset.
+\clearpage
 \newpage
-\subsection{Backpropagation}
+\section{Backpropagation}
 \textbf{Backpropagation} - is a training algorithm for feedforward neural networks \cite{ffn_wiki} that propagates the error backward from the output to the input layer.
 It plays a crucial role in gradient descent, a process of finding the minimum of the cost function. 
 Gradient descent relies on backpropagation to calculate gradients by moving backward in the neural network.
@@ -242,7 +245,7 @@ They help improve prediction accuracy by reducing the output error in neural net
     \label{fig:calculate_gradients}
     \subcaption*{It represents how much the weights and biases should be changed to minimize the difference between the predicted and expected outputs. It's like figuring out the direction and magnitude of the correction needed to improve the network's performance.}
 \end{figure}
-
+\clearpage
 \newpage
 \section{Cost Landscape}
 
@@ -287,12 +290,10 @@ To evaluate the performance of the trained neural network, we need to test it on
 
 \subsection{Test Dataset}
 
-The test dataset consists of a set of input samples and their corresponding expected outputs. These samples are fed into the trained network, and the network's predictions are compared against the expected outputs to measure its accuracy.
+The test dataset consists of a set of input samples and their corresponding expected outputs.
+These samples are fed into the trained network, and the network's predictions are compared against the expected outputs to measure its accuracy.
 
-\subsection{Evaluation Metrics}
-
-To assess the performance of the network, various evaluation metrics can be used, depending on the nature of the problem. Some common metrics include accuracy, precision, recall, and F1 score. These metrics provide insights into the network's ability to correctly classify the input samples.
-
+\newpage
 \subsection{Example Code}
 
 Here is an example code snippet that demonstrates how to test the network using a test dataset:
@@ -349,7 +350,9 @@ Best result we achieved was 57.5\% accuracy.
 
 \subsection{User Interface}
 
-The user interface allows users to draw digits and immedietly get the result from neural network. It is a simple application that uses the trained model to predict the digit drawn by the user. The user can draw a digit using the mouse and the application will display the predicted digit along with the confidence level of the prediction.
+The user interface allows users to draw digits and immediately get the result from the neural network.
+It is a simple application that uses the trained model to predict the digit drawn by the user.
+The user can draw a digit using the mouse, and the application will display the predicted digit along with the confidence level of the prediction.
 
 \begin{figure}[ht]
     \centering 
@@ -358,12 +361,17 @@ The user interface allows users to draw digits and immedietly get the result fro
     \label{fig:ui}
 \end{figure}
 
+\clearpage
 \newpage
 \section{Conclusion}
-In conclusion, our project has successfully developed a handwritten text symbol recognition system using a deep neural network. We have achieved our primary objective of creating a model capable of accurately identifying and classifying handwritten digits from 0 to 9. The model has been trained on the MNIST dataset and has demonstrated a satisfactory level of accuracy in recognizing handwritten digits. We have also implemented a user interface that allows users to draw digits and obtain real-time predictions from the trained model.
-There is still room for improvement in terms of model accuracy and robustness. Future work could focus on exploring advanced neural network architectures, optimization algorithms, and data augmentation techniques to enhance the model's performance. Additionally, the user interface could be further developed to provide a more intuitive and interactive experience for users.
+In conclusion, our project has successfully developed a handwritten text symbol recognition system using a deep neural network.
+We have achieved our primary objective of creating a model capable of accurately identifying and classifying handwritten digits from 0 to 9.
+The model has been trained on the MNIST dataset and has demonstrated a satisfactory level of accuracy in recognizing handwritten digits.
+We have also implemented a user interface that allows users to draw digits and obtain real-time predictions from the trained model.
+There is still room for improvement in terms of model accuracy and robustness.
+Future work could focus on exploring advanced neural network architectures, optimization algorithms, and data augmentation techniques to enhance the model's performance.
+Additionally, the user interface could be further developed to provide a more intuitive and interactive experience for users.
 
-\newpage
 \printbibliography 
 
 \end{document}

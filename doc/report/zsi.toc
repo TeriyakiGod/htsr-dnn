@@ -8,27 +8,26 @@
 \contentsline {subsection}{\numberline {3.3}Optimization Impact}{4}{}%
 \contentsline {section}{\numberline {4}Weights and Biases}{5}{}%
 \contentsline {subsection}{\numberline {4.1}Initialization}{5}{}%
-\contentsline {subsection}{\numberline {4.2}Weighted sum of inputs}{5}{}%
-\contentsline {section}{\numberline {5}Our model}{6}{}%
-\contentsline {section}{\numberline {6}Activation functions}{7}{}%
-\contentsline {subsection}{\numberline {6.1}Sigmoid function}{7}{}%
-\contentsline {subsection}{\numberline {6.2}The derivative of the sigmoid function}{7}{}%
-\contentsline {section}{\numberline {7}Gradient descent and backpropagation}{9}{}%
-\contentsline {subsection}{\numberline {7.1}Gradients of the cost function}{9}{}%
-\contentsline {subsection}{\numberline {7.2}Data loading and learning}{10}{}%
-\contentsline {subsection}{\numberline {7.3}Backpropagation}{11}{}%
-\contentsline {section}{\numberline {8}Cost Landscape}{12}{}%
-\contentsline {subsection}{\numberline {8.1}Definition}{12}{}%
-\contentsline {subsection}{\numberline {8.2}Characteristics}{12}{}%
-\contentsline {subsection}{\numberline {8.3}Impact on Optimization}{12}{}%
-\contentsline {subsection}{\numberline {8.4}Optimization Strategies}{12}{}%
-\contentsline {section}{\numberline {9}Chain Rule}{13}{}%
-\contentsline {subsection}{\numberline {9.1}Definition}{13}{}%
-\contentsline {subsection}{\numberline {9.2}Application in Backpropagation}{13}{}%
-\contentsline {section}{\numberline {10}Testing the network}{14}{}%
-\contentsline {subsection}{\numberline {10.1}Test Dataset}{14}{}%
-\contentsline {subsection}{\numberline {10.2}Evaluation Metrics}{14}{}%
-\contentsline {subsection}{\numberline {10.3}Example Code}{14}{}%
-\contentsline {subsection}{\numberline {10.4}Testing Results}{15}{}%
-\contentsline {subsection}{\numberline {10.5}User Interface}{15}{}%
-\contentsline {section}{\numberline {11}Conclusion}{16}{}%
+\contentsline {subsection}{\numberline {4.2}Weighted sum of inputs}{6}{}%
+\contentsline {section}{\numberline {5}Our model}{7}{}%
+\contentsline {section}{\numberline {6}Activation functions}{8}{}%
+\contentsline {subsection}{\numberline {6.1}Sigmoid function}{8}{}%
+\contentsline {subsection}{\numberline {6.2}The derivative of the sigmoid function}{9}{}%
+\contentsline {section}{\numberline {7}Gradient descent}{10}{}%
+\contentsline {section}{\numberline {8}Data loading}{12}{}%
+\contentsline {section}{\numberline {9}Training the network}{13}{}%
+\contentsline {section}{\numberline {10}Backpropagation}{14}{}%
+\contentsline {section}{\numberline {11}Cost Landscape}{15}{}%
+\contentsline {subsection}{\numberline {11.1}Definition}{15}{}%
+\contentsline {subsection}{\numberline {11.2}Characteristics}{15}{}%
+\contentsline {subsection}{\numberline {11.3}Impact on Optimization}{15}{}%
+\contentsline {subsection}{\numberline {11.4}Optimization Strategies}{15}{}%
+\contentsline {section}{\numberline {12}Chain Rule}{16}{}%
+\contentsline {subsection}{\numberline {12.1}Definition}{16}{}%
+\contentsline {subsection}{\numberline {12.2}Application in Backpropagation}{16}{}%
+\contentsline {section}{\numberline {13}Testing the network}{17}{}%
+\contentsline {subsection}{\numberline {13.1}Test Dataset}{17}{}%
+\contentsline {subsection}{\numberline {13.2}Example Code}{18}{}%
+\contentsline {subsection}{\numberline {13.3}Testing Results}{19}{}%
+\contentsline {subsection}{\numberline {13.4}User Interface}{19}{}%
+\contentsline {section}{\numberline {14}Conclusion}{20}{}%
